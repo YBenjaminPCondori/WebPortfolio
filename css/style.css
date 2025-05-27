@@ -1,4 +1,4 @@
-Can you help me modify this style.css to accomodate a index html minimizing use of inline css as much as possible please: p, a, b, h1, h2, h3, h4, span {
+p, a, b, h1, h2, h3, h4, span {
 font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -908,7 +908,6 @@ clear: both;
   width: 130px;
 }
 
-}
 #cssmenu2 > ul > li > a:hover {
   color: black;
 }
