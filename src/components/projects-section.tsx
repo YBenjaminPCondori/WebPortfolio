@@ -4,68 +4,95 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 
+// You can replace the image URLs with real screenshots if you have them
 const projects = [
   {
     id: 1,
-    title: "Cloud Task Manager",
-    description: "Full-stack web application with real-time collaboration, built using React, Node.js, and MongoDB. Features include team workspaces, task automation, and analytics dashboard.",
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    technologies: ["React", "Node.js", "MongoDB"],
-    category: "software",
-    githubUrl: "#",
-    liveUrl: "#",
+    title: "IoT ThingSpeak Sensor Program",
+    description:
+      "IoT system using Python and Arduino IDE to collect motion sensor data, send it to ThingSpeak, and generate CSVs for visualization.",
+    image:
+      "https://images.unsplash.com/photo-1464983953574-0892a716854b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    technologies: ["Python", "Arduino", "ThingSpeak", "IoT"],
+    category: "embedded",
+    githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/ThingSpeak-IoT-Arduino-Project",
+    liveUrl: null,
   },
   {
     id: 2,
-    title: "Smart Home IoT System",
-    description: "Comprehensive IoT ecosystem with ESP32 microcontrollers, sensor networks, and mobile app control. Includes automated lighting, climate control, and security monitoring.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    technologies: ["ESP32", "C++", "MQTT"],
-    category: "embedded",
-    githubUrl: "#",
+    title: "Java GUI Banking Management System",
+    description:
+      "Java Swing app for secure banking and supermarket operations. Used UML diagrams to model users, access, and workflows.",
+    image:
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    technologies: ["Java", "Swing", "UML"],
+    category: "software",
+    githubUrl: "https://github.com/YBenjaminPCondori/Software-Projects/tree/main/Banking-Management-System",
     liveUrl: null,
   },
   {
     id: 3,
-    title: "Real-time Object Detection",
-    description: "Advanced computer vision system using YOLO v8 for real-time object detection and tracking. Optimized for edge deployment with 95% accuracy on custom dataset.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    technologies: ["Python", "PyTorch", "OpenCV"],
-    category: "ml",
-    githubUrl: "#",
-    liveUrl: "#",
+    title: "PIC Microcontroller LED/LCD Project",
+    description:
+      "Developed and programmed a PIC16F877A with C and Assembly to control LEDs, 7-segment, and LCD display. Used MPLAB XC8 and mLoader.",
+    image:
+      "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    technologies: ["PIC16F877A", "Embedded C", "Assembly", "MPLAB"],
+    category: "embedded",
+    githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/PIC16F1877-Home-Monitoring-System-Project",
+    liveUrl: null,
   },
   {
     id: 4,
-    title: "Analytics Dashboard",
-    description: "Interactive data visualization platform for business intelligence. Features real-time data processing, custom chart builders, and automated report generation.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    technologies: ["Vue.js", "D3.js", "Python"],
-    category: "software",
-    githubUrl: "#",
-    liveUrl: "#",
+    title: "Occupancy Monitoring with TinyML",
+    description:
+      "Python + TensorFlow system using edge AI to detect office occupancy, dynamically adjust conditions, and optimize energy use. Deployed on Raspberry Pi.",
+    image:
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    technologies: ["Python", "TensorFlow", "TinyML", "Raspberry Pi"],
+    category: "ml",
+    githubUrl: "https://github.com/YBenjaminPCondori/Machine-Learning-Gen-AI/tree/main/Occupancy-Monitoring-Conv1D-System-with-Gaussian-Data-Compression",
+    liveUrl: null,
   },
   {
     id: 5,
-    title: "Autonomous Robot",
-    description: "Mobile robot with SLAM navigation, obstacle avoidance, and autonomous path planning. Built using ROS, LIDAR sensors, and custom motor control systems.",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    technologies: ["ROS", "C++", "Raspberry Pi"],
+    title: "VDHL FPGA Sequence Detector",
+    description:
+      "Designed, simulated, and debugged a sequence detector state machine on a NEXYS FPGA board using VHDL. Included power analysis and Vivado simulation.",
+    image:
+      "https://images.unsplash.com/photo-1465101178521-c1a9136a3d29?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    technologies: ["VHDL", "FPGA", "Vivado", "NEXYS"],
     category: "embedded",
-    githubUrl: "#",
+    githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/FPGA-Sequence-Detector-Projects",
     liveUrl: null,
   },
   {
     id: 6,
-    title: "Predictive Maintenance AI",
-    description: "Machine learning system for industrial equipment monitoring using time-series analysis and anomaly detection. Reduces maintenance costs by 30% through predictive insights.",
-    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    technologies: ["TensorFlow", "Scikit-learn", "Docker"],
-    category: "ml",
-    githubUrl: "#",
+    title: "Raspberry Pi OpenCV Socket Project",
+    description:
+      "Built a real-time video pipeline using Python, OpenCV, and Raspberry Pi to detect red-dot objects and track motion. Networked with socket programming.",
+    image:
+      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    technologies: ["Python", "OpenCV", "Raspberry Pi", "Sockets"],
+    category: "software",
+    githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/Dot-Tracking-RaspberryPi-Project",
+    liveUrl: null,
+  },
+
+  {
+    id: 7,
+    title: "MSP4320 Line Following Robot",
+    description:
+      "Built a Line-Following Robot using the MSP4320.",
+    image:
+      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    technologies: ["Python", "OpenCV", "Raspberry Pi", "Sockets"],
+    category: "software",
+    githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/Line-Following-Robot-Project",
     liveUrl: null,
   },
 ];
+
 
 const categories = [
   { id: "all", label: "All Projects" },
@@ -77,9 +104,10 @@ const categories = [
 export default function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState("all");
 
-  const filteredProjects = activeCategory === "all" 
-    ? projects 
-    : projects.filter(project => project.category === activeCategory);
+  const filteredProjects =
+    activeCategory === "all"
+      ? projects
+      : projects.filter((project) => project.category === activeCategory);
 
   return (
     <section id="projects" className="py-20 bg-slate-50">
@@ -87,7 +115,7 @@ export default function ProjectsSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Featured Projects</h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            A showcase of innovative solutions across software development, embedded systems, and machine learning.
+            Projects in embedded systems, machine learning, edge AI, microcontrollers, and full-stack software.
           </p>
         </div>
 
@@ -108,10 +136,13 @@ export default function ProjectsSection() {
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
-            <Card key={project.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 project-card">
+            <Card
+              key={project.id}
+              className="overflow-hidden hover:shadow-xl transition-all duration-300 project-card"
+            >
               <div className="relative">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover"
                 />
@@ -120,19 +151,27 @@ export default function ProjectsSection() {
                 <div className="flex items-center justify-between mb-3">
                   <h3 className="text-xl font-bold text-slate-800">{project.title}</h3>
                   <div className="flex space-x-2">
-                    <a href={project.githubUrl} className="text-slate-400 hover:text-primary transition-colors">
+                    <a
+                      href={project.githubUrl}
+                      className="text-slate-400 hover:text-primary transition-colors"
+                    >
                       <Github className="h-5 w-5" />
                     </a>
                     {project.liveUrl && (
-                      <a href={project.liveUrl} className="text-slate-400 hover:text-primary transition-colors">
+                      <a
+                        href={project.liveUrl}
+                        className="text-slate-400 hover:text-primary transition-colors"
+                      >
                         <ExternalLink className="h-5 w-5" />
                       </a>
                     )}
                   </div>
                 </div>
-                
-                <p className="text-slate-600 mb-4 text-sm leading-relaxed">{project.description}</p>
-                
+
+                <p className="text-slate-600 mb-4 text-sm leading-relaxed">
+                  {project.description}
+                </p>
+
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
                     <Badge key={tech} variant="secondary" className="text-xs">
