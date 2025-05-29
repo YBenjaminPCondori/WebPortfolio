@@ -79,7 +79,7 @@ const experiences = [
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-20 bg-[#0f172a]">
+    <section id="experience" className="py-20 bg-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white">Professional Experience</h2>
@@ -101,7 +101,7 @@ export default function ExperienceSection() {
                 }`}></div>
                 
                 <div className={`ml-16 md:ml-0 md:w-1/2 ${index % 2 === 1 ? 'md:pl-12' : 'md:pr-12'}`}>
-                  <Card className="hover:shadow-xl transition-shadow">
+                  <Card className="bg-white/90 hover:shadow-xl border border-blue-100 transition-shadow">
                     <CardContent className="p-6">
                       <div className="flex items-start justify-between mb-4">
                         <div>

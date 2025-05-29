@@ -30,7 +30,7 @@ const achievements = [
 
 export default function EducationSection() {
   return (
-    <section id="education" className="py-20 bg-white">
+    <section id="education" className="py-20 bg-gradient-to-br from-blue-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Education</h2>
@@ -41,7 +41,7 @@ export default function EducationSection() {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Current Education */}
-          <div className="bg-gradient-primary p-8 rounded-2xl text-white">
+          <div className="bg-gradient-to-tr from-blue-400 to-blue-600 p-8 rounded-2xl text-white">
             <div className="flex items-start space-x-4">
               <div className="bg-white/20 p-3 rounded-lg">
                 <GraduationCap className="h-6 w-6" />
@@ -69,7 +69,7 @@ export default function EducationSection() {
           {/* Skills & Certifications */}
           <div className="space-y-8">
             {/* Technical Skills */}
-            <Card>
+            <Card className="bg-blue-50 border border-blue-100">
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold text-slate-800 mb-6 flex items-center">
                   <div className="bg-primary/10 p-2 rounded-lg mr-3">
@@ -105,7 +105,7 @@ export default function EducationSection() {
             </Card>
 
             {/* Certifications */}
-            <Card>
+            <Card className="bg-blue-50 border border-blue-100">
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold text-slate-800 mb-6 flex items-center">
                   <div className="bg-primary/10 p-2 rounded-lg mr-3">
@@ -128,7 +128,7 @@ export default function EducationSection() {
 
         {/* Achievements */}
         <div className="mt-12">
-          <Card>
+          <Card className="bg-blue-50 border border-blue-100">
             <CardContent className="p-8">
               <h3 className="text-xl font-bold text-slate-800 mb-6 text-center">Achievements & Activities</h3>
               <div className="grid md:grid-cols-3 gap-6">

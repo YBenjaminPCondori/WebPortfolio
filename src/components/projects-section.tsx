@@ -110,7 +110,7 @@ export default function ProjectsSection() {
       : projects.filter((project) => project.category === activeCategory);
 
   return (
-    <section id="projects" className="py-20 bg-slate-50">
+    <section id="projects" className="py-20 bg-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Featured Projects</h2>
@@ -138,7 +138,7 @@ export default function ProjectsSection() {
           {filteredProjects.map((project) => (
             <Card
               key={project.id}
-              className="overflow-hidden hover:shadow-xl transition-all duration-300 project-card"
+              className="bg-white/90 border border-blue-100 overflow-hidden hover:shadow-xl transition-all duration-300 project-card"
             >
               <div className="relative">
                 <img
@@ -149,7 +149,7 @@ export default function ProjectsSection() {
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-bold text-blue-800">{project.title}</h3>
+                  <h3 className="text-xl font-bold text-blue-700">{project.title}</h3>
                   <div className="flex space-x-2">
                     <a
                       href={project.githubUrl}

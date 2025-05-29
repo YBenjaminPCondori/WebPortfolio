@@ -23,7 +23,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="pt-16 min-h-screen flex items-center">
+    <section id="home" className="pt-16 min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-slide-up">
@@ -38,13 +38,13 @@ export default function HeroSection() {
             </div>
             
             <div className="flex flex-wrap gap-3">
-              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium">
+              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-blue-200 text-blue-900">
                 Software Development/Engineering
               </Badge>
-              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium">
+              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-blue-200 text-blue-900">
                 Embedded/Electronics Systems
               </Badge>
-              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium">
+              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-blue-200 text-blue-900">
                 Machine Learning/Generative-AI
               </Badge>
             </div>
