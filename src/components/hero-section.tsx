@@ -8,7 +8,7 @@ export default function HeroSection() {
     // In a real implementation, this would download the actual resume file
     const link = document.createElement('a');
     link.href = '#';
-    link.download = 'Alex_Chen_Resume.pdf';
+    link.download = 'WebPortfolioInternship.pdf';
     // link.click(); // Commented out to avoid actual download in demo
     
     // Show feedback
@@ -28,7 +28,7 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-slide-up">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-6xl font-bold text-slate-800 leading-tight">
+              <h1 className="text-4xl md:text-6xl font-bold text-blue-400 leading-tight">
                 Computer Systems
                 <span className="text-primary block">Engineer</span>
               </h1>
