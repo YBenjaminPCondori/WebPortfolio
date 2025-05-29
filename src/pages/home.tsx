@@ -18,7 +18,7 @@ export default function Home() {
       </main>
       <footer className="bg-slate-900 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-slate-400">&copy; 2024 Alex Chen. Built with passion for engineering excellence.</p>
+          <p className="text-slate-400">&copy; Website Developed by Y. Benjamin Perez C. ©</p>
         </div>
       </footer>
     </div>

@@ -30,7 +30,7 @@ export default function HeroSection() {
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl font-bold text-blue-400 leading-tight">
                 Computer Systems
-                <span className="text-primary block">Engineer</span>
+                <span className="text-primary block">Engineering</span>
               </h1>
               <p className="text-xl text-slate-600 leading-relaxed max-w-lg">
                 Passionate about building innovative solutions at the intersection of software, hardware, and artificial intelligence.
@@ -39,13 +39,13 @@ export default function HeroSection() {
             
             <div className="flex flex-wrap gap-3">
               <Badge variant="secondary" className="px-4 py-2 text-sm font-medium">
-                Software Development
+                Software Development/Engineering
               </Badge>
               <Badge variant="secondary" className="px-4 py-2 text-sm font-medium">
-                Embedded Systems
+                Embedded/Electronics Systems
               </Badge>
               <Badge variant="secondary" className="px-4 py-2 text-sm font-medium">
-                Machine Learning
+                Machine Learning/Generative-AI
               </Badge>
             </div>
 
@@ -89,10 +89,6 @@ export default function HeroSection() {
                 alt="Professional engineer working on computer systems" 
                 className="rounded-xl shadow-2xl w-full h-auto animate-float"
               />
-            </div>
-            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl border border-slate-200">
-              <div className="text-2xl font-bold text-primary">4+</div>
-              <div className="text-sm text-slate-600">Years Experience</div>
             </div>
           </div>
         </div>
