@@ -96,9 +96,9 @@ const projects = [
 
 const categories = [
   { id: "all", label: "All Projects" },
-  { id: "software", label: "Software" },
-  { id: "embedded", label: "Embedded" },
-  { id: "ml", label: "Machine Learning" },
+  { id: "software", label: "Software/Web Development" },
+  { id: "embedded", label: "Embedded/Electronic" },
+  { id: "ml", label: "Machine Learning/Generative-AI" },
 ];
 
 export default function ProjectsSection() {
@@ -149,7 +149,7 @@ export default function ProjectsSection() {
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-bold text-slate-800">{project.title}</h3>
+                  <h3 className="text-xl font-bold text-blue-800">{project.title}</h3>
                   <div className="flex space-x-2">
                     <a
                       href={project.githubUrl}

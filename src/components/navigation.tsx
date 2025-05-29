@@ -14,9 +14,14 @@ const navLinks = [
 export default function Navigation() {
   const [activeSection, setActiveSection] = useState("home");
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false); // <-- NEW
 
   useEffect(() => {
     const handleScroll = () => {
+      // For navbar color change
+      setScrolled(window.scrollY > 0);
+
+      // For section highlighting
       const sections = navLinks.map(link => link.href.substring(1));
       const scrollPosition = window.scrollY + 100;
 
@@ -24,7 +29,10 @@ export default function Navigation() {
         const element = document.getElementById(section);
         if (element) {
           const { offsetTop, offsetHeight } = element;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + offsetHeight
+          ) {
             setActiveSection(section);
             break;
           }
@@ -45,12 +53,17 @@ export default function Navigation() {
     setIsOpen(false);
   };
 
+  // CHANGE THIS LINE
   return (
-    <nav className="fixed top-0 w-full bg-blue/95 backdrop-blur-sm z-50 border-b border-slate-200">
+    <nav
+      className={`fixed top-0 w-full z-50 border-b border-slate-200 transition-colors duration-300 ${
+        scrolled ? "bg-white shadow" : "bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="font-bold text-xl text-slate-800">Y. Benjamin Perez C.</div>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navLinks.map((link) => (
