@@ -82,7 +82,7 @@ export default function ExperienceSection() {
     <section id="experience" className="py-20 bg-blue-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">Professional Experience</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white">PROFESSIONAL EXPERIENCE</h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
             Building expertise through hands-on experience in software development, embedded systems, and machine learning.
           </p>
@@ -101,7 +101,7 @@ export default function ExperienceSection() {
                 }`}></div>
                 
                 <div className={`ml-16 md:ml-0 md:w-1/2 ${index % 2 === 1 ? 'md:pl-12' : 'md:pr-12'}`}>
-                  <Card className="bg-white/90 hover:shadow-xl border border-blue-100 transition-shadow">
+                  <Card className="bg-white/90 hover:shadow-xl border border-blue-500 transition-shadow">
                     <CardContent className="p-6">
                       <div className="flex items-start justify-between mb-4">
                         <div>
