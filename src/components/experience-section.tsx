@@ -93,7 +93,7 @@ export default function ExperienceSection() {
   <div
     className="absolute left-8 md:left-1/2 transform md:-translate-x-px top-0 bottom-0 w-0.5"
     style={{
-      background: "linear-gradient(to bottom,rgb(3, 29, 84), #60a5fa, #bae6fd)",
+      background: "linear-gradient(to bottom,rgb(3, 29, 84), #60a5fa,rgb(7, 58, 85))",
       opacity: 0.8,
     }}
   ></div>
