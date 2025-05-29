@@ -3,12 +3,13 @@ import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Award, Users, Trophy } from "lucide-react";
 
 const coursework = [
-  "Computer Architecture",
+  "Digital Systems Design",
   "Embedded Systems",
-  "Machine Learning",
-  "Real-time Systems",
-  "Digital Signal Processing",
-  "Operating Systems"
+  "Artificial Intelligence Systems",
+  "Computer Architecture",
+  "Quality Engineering and Management",
+  "Autonomous Systems",
+  "Advanced Computing"
 ];
 
 const skills = {
@@ -47,10 +48,10 @@ export default function EducationSection() {
                 <GraduationCap className="h-6 w-6" />
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold mb-2">Bachelor of Science</h3>
+                <h3 className="text-2xl font-bold mb-2">Bachelor of Engineering</h3>
                 <p className="text-blue-100 font-semibold text-lg mb-1">Computer Systems Engineering</p>
-                <p className="text-blue-200 mb-3">Stanford University</p>
-                <p className="text-sm text-blue-200 mb-4">Expected Graduation: May 2025 | GPA: 3.8/4.0</p>
+                <p className="text-blue-200 mb-3">Brunel University of London</p>
+                <p className="text-sm text-blue-200 mb-4">Expected Graduation: July 2025</p>
                 
                 <div className="space-y-3">
                   <div>
