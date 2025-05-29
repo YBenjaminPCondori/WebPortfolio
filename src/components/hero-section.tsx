@@ -85,7 +85,7 @@ export default function HeroSection() {
           <div className="relative animate-fade-in">
             <div className="bg-blue-100 rounded-2xl p-8">
               <img 
-                src="C:\Users\ybenj\Documents\GitHub\WebPortfolio\public\output.jpg" 
+                src="/output.jpg" 
                 alt="Professional engineer working on computer systems" 
                 className="rounded-xl shadow-2xl w-full h-auto animate-float"
               />
