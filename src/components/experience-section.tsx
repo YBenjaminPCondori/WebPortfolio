@@ -105,7 +105,7 @@ export default function ExperienceSection() {
                     <CardContent className="p-6">
                       <div className="flex items-start justify-between mb-4">
                         <div>
-                          <h3 className="text-xl font-bold text-slate-800">{exp.title}</h3>
+                          <h3 className="text-xl font-bold text-blue-400">{exp.title}</h3>
                           <p className={`font-medium ${exp.current ? 'text-primary' : 'text-slate-600'}`}>
                             {exp.company}
                           </p>
