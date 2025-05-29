@@ -7,9 +7,9 @@ export default function HeroSection() {
   const handleDownloadResume = () => {
     // In a real implementation, this would download the actual resume file
     const link = document.createElement('a');
-    link.href = '#';
+    link.href = '/WebPortfolioInternship.pdf';
     link.download = 'WebPortfolioInternship.pdf';
-    // link.click(); // Commented out to avoid actual download in demo
+    link.click(); 
     
     // Show feedback
     console.log('Resume download initiated');
