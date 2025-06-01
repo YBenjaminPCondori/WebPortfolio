@@ -110,7 +110,7 @@ export default function ExperienceSection() {
                             {exp.company}
                           </p>
                         </div>
-                        <Badge variant={exp.current ? "default" : "primary"} className="text-sm">
+                        <Badge variant={exp.current ? "default" : "secondary"} className="text-sm">
                           {exp.period}
                         </Badge>
                       </div>
@@ -119,7 +119,7 @@ export default function ExperienceSection() {
                       
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech) => (
-                          <Badge key={tech} variant="outline" className="text-xs">
+                          <Badge key={tech} variant="primary" className="text-xs">
                             {tech}
                           </Badge>
                         ))}
