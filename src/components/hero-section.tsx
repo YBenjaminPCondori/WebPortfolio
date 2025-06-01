@@ -50,18 +50,17 @@ export default function HeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
+              <Button
+                variant="outline" 
                 onClick={handleDownloadResume}
-                className="bg-primary hover:bg-primary/90 text-white font-semibold group"
-              >
+                className="bg-primary hover:bg-primary/90 text-white font-semibold group">
                 <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
                 Download Resume
               </Button>
               <Button 
                 variant="outline" 
                 onClick={handleViewProjects}
-                className="border-primary text-primary hover:bg-primary hover:text-white font-semibold"
-              >
+                className="border-primary text-primary hover:bg-primary hover:text-white font-semibold">
                 View Projects
                 <ExternalLink className="ml-2 h-4 w-4" />
               </Button>
