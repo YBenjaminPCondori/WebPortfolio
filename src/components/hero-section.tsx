@@ -53,7 +53,7 @@ export default function HeroSection() {
               <Button
                 variant="outline" 
                 onClick={handleDownloadResume}
-                className="bg-primary hover:bg-primary/90 text-white font-semibold group">
+                className="border-primary text-primary hover:bg-primary hover:text-white font-semibold">
                 <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
                 Download Resume
               </Button>
