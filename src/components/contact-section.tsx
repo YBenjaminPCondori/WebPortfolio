@@ -7,22 +7,22 @@ const contactMethods = [
   {
     icon: Mail,
     title: "Email",
-    value: "alex.chen@email.com",
-    link: "mailto:alex.chen@email.com",
+    value: "y.benjamin@ybenpc.com",
+    link: "mailto:y.benjamin@ybenpc.com",
     action: "Send Message"
   },
   {
     icon: SiLinkedin,
     title: "LinkedIn",
     value: "Connect professionally",
-    link: "#",
+    link: "https://www.linkedin.com/in/ybenpc/",
     action: "View Profile"
   },
   {
     icon: SiGithub,
     title: "GitHub",
     value: "View my code",
-    link: "#",
+    link: "https://www.github.com/YBenjaminPCondori",
     action: "Check Repos"
   }
 ];
@@ -32,7 +32,7 @@ export default function ContactSection() {
     // In a real implementation, this would download the actual resume file
     const link = document.createElement('a');
     link.href = '#';
-    link.download = 'Alex_Chen_Resume.pdf';
+    link.download = 'Internship-Resume-YBenjaminPCondori.pdf'; // Replace with actual resume URL
     // link.click(); // Commented out to avoid actual download in demo
     
     // Show feedback
