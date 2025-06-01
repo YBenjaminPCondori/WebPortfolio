@@ -18,15 +18,15 @@ const skills = {
 };
 
 const certifications = [
-  { name: "AWS Cloud Practitioner", year: "2024" },
-  { name: "TensorFlow Developer", year: "2023" },
-  { name: "Embedded Systems Certification", year: "2023" }
+  { name: "LearntoCode - Front End Fundamentals", year: "2023" },
+  { name: "Data Camp - ML Fundamentals", year: "2025" },
+  { name: "Google AI - Skills certification", year: "2025" }
 ];
 
 const achievements = [
-  { icon: Trophy, title: "Engineering Honor Society", subtitle: "Member since 2022" },
-  { icon: Users, title: "Robotics Club", subtitle: "Vice President" },
-  { icon: Award, title: "Hackathon Winner", subtitle: "2023 TechInnovate" }
+  { icon: Trophy, title: "Data Science Society", subtitle: "Co-Founder" },
+  { icon: Users, title: "Brunel Engineering Society", subtitle: "Member since 2023" },
+  { icon: Award, title: "Brunel+ Silver Award", subtitle: "Certificate of Extracurricular Events" }
 ];
 
 export default function EducationSection() {
