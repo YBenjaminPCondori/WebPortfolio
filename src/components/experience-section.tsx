@@ -110,7 +110,7 @@ export default function ExperienceSection() {
                             {exp.company}
                           </p>
                         </div>
-                        <Badge variant={exp.current ? "default" : "primaryy"} className="text-sm">
+                        <Badge variant={exp.current ? "default" : "primary"} className="text-sm">
                           {exp.period}
                         </Badge>
                       </div>
