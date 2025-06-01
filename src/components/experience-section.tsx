@@ -76,7 +76,6 @@ const experiences = [
   },
 ];
 
-
 export default function ExperienceSection() {
   return (
     <section id="experience" className="py-20 bg-blue-100">
@@ -110,7 +109,8 @@ export default function ExperienceSection() {
                             {exp.company}
                           </p>
                         </div>
-                        <Badge variant={exp.current ? "default" : "secondary"} className="bg-blue-500 text-white text-sm">
+                        {/* Period badge forced blue */}
+                        <Badge className="bg-blue-500 text-white text-sm">
                           {exp.period}
                         </Badge>
                       </div>
@@ -119,7 +119,7 @@ export default function ExperienceSection() {
                       
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech) => (
-                          <Badge key={tech} variant="outline" className="text-xs">
+                          <Badge key={tech} className="bg-blue-500 text-white text-xs">
                             {tech}
                           </Badge>
                         ))}
