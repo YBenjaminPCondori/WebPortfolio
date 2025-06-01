@@ -174,7 +174,7 @@ export default function ProjectsSection() {
 
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="secondary" className="text-xs">
+                    <Badge key={tech} variant="primary" className="text-xs">
                       {tech}
                     </Badge>
                   ))}
