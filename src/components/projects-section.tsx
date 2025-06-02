@@ -12,7 +12,7 @@ const projects = [
     description:
       "IoT system using Python and Arduino IDE to collect motion sensor data, send it to ThingSpeak, and generate CSVs for visualization.",
     image:
-      "https://images.unsplash.com/photo-1464983953574-0892a716854b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "/",
     technologies: ["Python", "Arduino", "ThingSpeak", "IoT"],
     category: "embedded",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/ThingSpeak-IoT-Arduino-Project",
@@ -24,7 +24,7 @@ const projects = [
     description:
       "Java Swing app for secure banking and supermarket operations. Used UML diagrams to model users, access, and workflows.",
     image:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "/",
     technologies: ["Java", "Swing", "UML"],
     category: "software",
     githubUrl: "https://github.com/YBenjaminPCondori/Software-Projects/tree/main/Banking-Management-System",
@@ -36,7 +36,7 @@ const projects = [
     description:
       "Developed and programmed a PIC16F877A with C and Assembly to control LEDs, 7-segment, and LCD display. Used MPLAB XC8 and mLoader.",
     image:
-      "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "/",
     technologies: ["PIC16F877A", "Embedded C", "Assembly", "MPLAB"],
     category: "embedded",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/PIC16F1877-Home-Monitoring-System-Project",
@@ -48,7 +48,7 @@ const projects = [
     description:
       "Python + TensorFlow system using edge AI to detect office occupancy, dynamically adjust conditions, and optimize energy use. Deployed on Raspberry Pi.",
     image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "",
     technologies: ["Python", "TensorFlow", "TinyML", "Raspberry Pi"],
     category: "ml",
     githubUrl: "https://github.com/YBenjaminPCondori/Machine-Learning-Gen-AI/tree/main/Occupancy-Monitoring-Conv1D-System-with-Gaussian-Data-Compression",
@@ -60,7 +60,7 @@ const projects = [
     description:
       "Designed, simulated, and debugged a sequence detector state machine on a NEXYS FPGA board using VHDL. Included power analysis and Vivado simulation.",
     image:
-      "https://images.unsplash.com/photo-1465101178521-c1a9136a3d29?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "/",
     technologies: ["VHDL", "FPGA", "Vivado", "NEXYS"],
     category: "embedded",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/FPGA-Sequence-Detector-Projects",
@@ -72,7 +72,7 @@ const projects = [
     description:
       "Built a real-time video pipeline using Python, OpenCV, and Raspberry Pi to detect red-dot objects and track motion. Networked with socket programming.",
     image:
-      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "/",
     technologies: ["Python", "OpenCV", "Raspberry Pi", "Sockets"],
     category: "software",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/Dot-Tracking-RaspberryPi-Project",
@@ -85,7 +85,7 @@ const projects = [
     description:
       "Built a Line-Following Robot using the MSP4320.",
     image:
-      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "/",
     technologies: ["Python", "OpenCV", "Raspberry Pi", "Sockets"],
     category: "software",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/Line-Following-Robot-Project",
