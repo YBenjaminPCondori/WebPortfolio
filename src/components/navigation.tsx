@@ -56,7 +56,7 @@ export default function Navigation() {
   // CHANGE THIS LINE
   return (
     <nav
-      className={`fixed top-0 w-full z-50 border-slate-200 transition-colors duration-300 ${
+      className={`fixed top-0 w-full z-50 border-white transition-colors duration-900 ${
         scrolled ? "bg-blue-100/80 backdrop-blur shadow" : "bg-transparent"
       }`}
     >
