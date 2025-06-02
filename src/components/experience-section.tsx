@@ -9,7 +9,7 @@ const experiences = [
     period: "Nov 2023 – July 2025",
     description: "Supported Brunel’s Professional Career Development Centre (PDC) by assisting at university careers events, distributing materials, and engaging with students and staff.",
     technologies: ["Event Support", "Communication", "Teamwork"],
-    current: true,
+    current: false,
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const experiences = [
     period: "Feb 2024 – July 2024",
     description: "Contributing to systems and product design, technical reporting, and CAD/CAM tasks. Focused on sustainable engineering solutions and water management.",
     technologies: ["CAD", "Technical Reporting", "Sustainability"],
-    current: true,
+    current: false,
   },
   {
     id: 3,
