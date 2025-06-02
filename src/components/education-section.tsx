@@ -129,7 +129,7 @@ export default function EducationSection() {
 
         {/* Achievements */}
         <div className="mt-12">
-          <Card className="bg-blue-50 border border-blue-100">
+          <Card className="bg-blue-50 border border-blue-200">
             <CardContent className="p-8">
               <h3 className="text-xl font-bold text-slate-800 mb-6 text-center">Achievements & Activities</h3>
               <div className="grid md:grid-cols-3 gap-6">
