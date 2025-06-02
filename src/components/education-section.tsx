@@ -95,7 +95,7 @@ export default function EducationSection() {
                     <h4 className="font-semibold text-slate-700 mb-2">Frameworks & Tools</h4>
                     <div className="flex flex-wrap gap-2">
                       {skills.frameworks.map((framework) => (
-                        <Badge key={framework} variant="outline" className="text-sm">
+                        <Badge key={framework} variant="secondary" className="text-sm">
                           {framework}
                         </Badge>
                       ))}
