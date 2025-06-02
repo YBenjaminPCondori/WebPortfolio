@@ -7,7 +7,7 @@ const contactMethods = [
   {
     icon: Mail,
     title: "Email",
-    value: "y.benjamin@ybenpc.com",
+    value: "Send me an email",
     link: "mailto:y.benjamin@ybenpc.com",
     action: "Send Message"
   },
