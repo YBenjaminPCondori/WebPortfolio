@@ -24,7 +24,7 @@ const projects = [
     description:
       "Java Swing app for secure banking and supermarket operations. Used UML diagrams to model users, access, and workflows.",
     image:
-      "/",
+      "C:\Users\ybenj\Documents\GitHub\WebPortfolio\public\banking.jpg",
     technologies: ["Java", "Swing", "UML"],
     category: "software",
     githubUrl: "https://github.com/YBenjaminPCondori/Software-Projects/tree/main/Banking-Management-System",
