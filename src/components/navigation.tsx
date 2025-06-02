@@ -4,11 +4,11 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 
 const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Projects" },
-  { href: "#education", label: "Education" },
-  { href: "#contact", label: "Contact" },
+  { href: "#home", label: "HOME" },
+  { href: "#experience", label: "WORK HISTORY" },
+  { href: "#projects", label: "PROJECTS" },
+  { href: "#education", label: "EDUCATION" },
+  { href: "#contact", label: "CONTACT" },
 ];
 
 export default function Navigation() {
@@ -56,7 +56,7 @@ export default function Navigation() {
   // CHANGE THIS LINE
   return (
     <nav
-      className={`fixed top-0 w-full z-50 border-white transition-colors duration-900 ${
+      className={`fixed top-0 w-full z-50 border-slate-200 transition-colors duration-300 ${
         scrolled ? "bg-blue-100/80 backdrop-blur shadow" : "bg-transparent"
       }`}
     >
