@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 const experiences = [
   {
     id: 1,
-    title: "Careers Ambassador",
+    title: "PDC Careers Ambassador",
     company: "Brunel University London",
     period: "Nov 2023 – Present",
     description: "Supported Brunel’s Professional Career Development Centre (PDC) by assisting at university careers events, distributing materials, and engaging with students and staff.",
@@ -79,10 +79,10 @@ const experiences = [
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-20 bg-blue-100">
+    <section id="experience" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-black">PROFESSIONAL EXPERIENCE</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white">PROFESSIONAL EXPERIENCE</h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
             Building expertise through hands-on experience in software development, embedded systems, and machine learning.
           </p>
