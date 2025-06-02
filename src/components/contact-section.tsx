@@ -58,7 +58,7 @@ export default function ContactSection() {
                   <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="font-bold text-slate-800 mb-2">{method.title}</h3>
+                  <h3 className="font-bold text-white mb-2">{method.title}</h3>
                   <p className="text-slate-600 mb-4">{method.value}</p>
                   <a 
                     href={method.link} 
