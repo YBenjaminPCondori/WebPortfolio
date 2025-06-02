@@ -29,7 +29,7 @@ export default function HeroSection() {
           <div className="space-y-8 animate-slide-up">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl font-bold text-blue-400 leading-tight">
-                Computer Systems
+                Computer
                 <span className="text-primary block">Engineering</span>
               </h1>
               <p className="text-xl text-slate-600 leading-relaxed max-w-lg">
