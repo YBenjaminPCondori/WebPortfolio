@@ -24,7 +24,7 @@ const projects = [
     description:
       "Java Swing app for secure banking and supermarket operations. Used UML diagrams to model users, access, and workflows.",
     image:
-      "C:\Users\ybenj\Documents\GitHub\WebPortfolio\public\banking.jpg",
+      "public/banking.jpg",
     technologies: ["Java", "Swing", "UML"],
     category: "software",
     githubUrl: "https://github.com/YBenjaminPCondori/Software-Projects/tree/main/Banking-Management-System",
@@ -60,7 +60,7 @@ const projects = [
     description:
       "Designed, simulated, and debugged a sequence detector state machine on a NEXYS FPGA board using VHDL. Included power analysis and Vivado simulation.",
     image:
-      "/",
+      "public/fpga.jpg",
     technologies: ["VHDL", "FPGA", "Vivado", "NEXYS"],
     category: "embedded",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/FPGA-Sequence-Detector-Projects",
