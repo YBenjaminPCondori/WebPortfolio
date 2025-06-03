@@ -81,7 +81,7 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="py-20 bg-gradient-to-b from-blue-800 via-blue-700 to-blue-600"
+      className="py-20 bg-gradient-to-b from-purple-800 via-purple-700 to-purple-600"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -104,11 +104,11 @@ export default function ExperienceSection() {
                 }`}></div>
                 
                 <div className={`ml-16 md:ml-0 md:w-1/2 ${index % 2 === 1 ? 'md:pl-12' : 'md:pr-12'}`}>
-                  <Card className="bg-white/90 hover:shadow-xl border border-blue-500 transition-shadow">
+                  <Card className="bg-white/90 hover:shadow-xl border border-purple-500 transition-shadow">
                     <CardContent className="p-6">
                       <div className="flex items-start justify-between mb-4">
                         <div>
-                          <h3 className="text-xl font-bold text-blue-600">{exp.title}</h3>
+                          <h3 className="text-xl font-bold text-purple-600">{exp.title}</h3>
                           <p className={`font-medium ${exp.current ? 'text-primary' : 'text-slate-600'}`}>
                             {exp.company}
                           </p>
