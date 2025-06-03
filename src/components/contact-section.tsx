@@ -40,11 +40,14 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-slate-50">
+    <section
+      id="contact"
+      className="py-20 bg-gradient-to-b from-blue-700 via-blue-600 to-blue-500"
+    >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Wanna Reach Out?</h2>
-          <p className="text-xl text-slate-600">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Wanna Reach Out?</h2>
+          <p className="text-xl text-slate-200">
             Let's connect! Whether you have a question, want to collaborate, or just say hi, feel free to reach out through any of the methods below.
           </p>
         </div>
