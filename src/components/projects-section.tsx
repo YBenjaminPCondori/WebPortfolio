@@ -110,11 +110,16 @@ export default function ProjectsSection() {
       : projects.filter((project) => project.category === activeCategory);
 
   return (
-    <section id="projects" className="py-20 bg-blue-50">
+    <section
+      id="projects"
+      className="py-20 bg-gradient-to-b from-blue-700 via-blue-600 to-blue-500"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Projects and Academic Work</h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Projects and Academic Work
+          </h2>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
             Projects in embedded systems, machine learning, edge AI, microcontrollers, and full-stack software.
           </p>
         </div>
