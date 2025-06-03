@@ -23,7 +23,10 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="pt-16 min-h-screen flex items-center bg-gradient-to-br from-black-100 via-black-100 to-black-100">
+    <section
+      id="home"
+      className="pt-16 min-h-screen flex items-center bg-gradient-to-b from-blue-950 via-blue-900 to-blue-800"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-slide-up">
@@ -32,7 +35,7 @@ export default function HeroSection() {
                 Computer
                 <span className="text-primary block">Engineering</span>
               </h1>
-              <p className="text-xl text-slate-600 leading-relaxed max-w-lg">
+              <p className="text-xl text-slate-200 leading-relaxed max-w-lg">
                 Passionate about building innovative solutions at the intersection of software, hardware, and artificial intelligence.
               </p>
             </div>

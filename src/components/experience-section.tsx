@@ -79,11 +79,14 @@ const experiences = [
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-20 bg-blue-100">
+    <section
+      id="experience"
+      className="py-20 bg-gradient-to-b from-blue-900 via-blue-800 to-blue-700"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-black">PROFESSIONAL EXPERIENCE</h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white">PROFESSIONAL EXPERIENCE</h2>
+          <p className="text-xl text-slate-200 max-w-2xl mx-auto">
             Building expertise through hands-on experience in software development, embedded systems, and machine learning.
           </p>
         </div>
