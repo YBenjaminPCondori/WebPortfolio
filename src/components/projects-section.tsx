@@ -112,14 +112,14 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="py-20 bg-gradient-to-b from-blue-700 via-blue-600 to-blue-500"
+      className="py-20 bg-gradient-to-b from-purple-700 via-purple-600 to-purple-500"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Projects and Academic Work
           </h2>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+          <p className="text-xl text-purple-100 max-w-2xl mx-auto">
             Projects in embedded systems, machine learning, edge AI, microcontrollers, and full-stack software.
           </p>
         </div>
@@ -143,7 +143,7 @@ export default function ProjectsSection() {
           {filteredProjects.map((project) => (
             <Card
               key={project.id}
-              className="bg-white/90 border border-blue-100 overflow-hidden hover:shadow-xl transition-all duration-300 project-card"
+              className="bg-white/90 border border-purple-100 overflow-hidden hover:shadow-xl transition-all duration-300 project-card"
             >
               <div className="relative">
                 <img
@@ -154,7 +154,7 @@ export default function ProjectsSection() {
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-bold text-blue-700">{project.title}</h3>
+                  <h3 className="text-xl font-bold text-purple-700">{project.title}</h3>
                   <div className="flex space-x-2">
                     <a
                       href={project.githubUrl}

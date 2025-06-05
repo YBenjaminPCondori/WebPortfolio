@@ -42,12 +42,12 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-20 bg-gradient-to-b from-blue-600 via-blue-500 to-blue-400"
+      className="py-20 bg-gradient-to-b from-purple-700 via-purple-600 to-purple-500"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Wanna Reach Out?</h2>
-          <p className="text-xl text-blue-100">
+          <p className="text-xl text-purple-100">
             Let's connect! Whether you have a question, want to collaborate, or just say hi, feel free to reach out through any of the methods below.
           </p>
         </div>
@@ -61,8 +61,8 @@ export default function ContactSection() {
                   <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="font-bold text-blue-100 mb-2">{method.title}</h3>
-                  <p className="text-blue-100 mb-4">{method.value}</p>
+              <h3 className="font-bold text-purple-100 mb-2">{method.title}</h3>
+                  <p className="text-purple-100 mb-4">{method.value}</p>
                   <a 
                     href={method.link} 
                     className="text-primary hover:text-primary/80 font-medium transition-colors"

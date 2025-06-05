@@ -25,14 +25,15 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="pt-16 min-h-screen flex items-center bg-gradient-to-b from-blue-900 via-blue-800 to-blue-700"
+      className="pt-16 min-h-screen flex items-center bg-gradient-to-b from-purple-900 via-purple-800 to-purple-700"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-slide-up">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-6xl font-bold text-blue-300 leading-tight">Computer Systems
-                <span className="text-4xl md:text-6xl font-bold text-blue-300 leading-tight">Engineering</span>
+              <h1 className="text-4xl md:text-6xl font-bold text-blue-300 leading-tight">
+                Computer
+                <span className="text-primary block">Engineering</span>
               </h1>
               <p className="text-xl text-slate-100 leading-relaxed max-w-lg">
                 Passionate about building innovative solutions at the intersection of software, hardware, and artificial intelligence.
@@ -40,13 +41,13 @@ export default function HeroSection() {
             </div>
             
             <div className="flex flex-wrap gap-3">
-              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-blue-500 text-white">
+              <Badge variant="primary" className="px-4 py-2 text-sm font-medium">
                 Software Development/Engineering
               </Badge>
-              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-blue-500 text-white">
+              <Badge variant="primary" className="px-4 py-2 text-sm font-medium">
                 Embedded/Electronics Systems
               </Badge>
-              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-blue-500 text-white">
+              <Badge variant="primary" className="px-4 py-2 text-sm font-medium">
                 Machine Learning/Generative-AI
               </Badge>
             </div>
@@ -69,13 +70,13 @@ export default function HeroSection() {
             </div>
 
             <div className="flex space-x-6">
-              <a href="https://www.linkedin.com/in/ybenpc/" className="text-blue-300 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/ybenpc/" className="text-teal-300 hover:text-white transition-colors">
                 <SiLinkedin className="h-6 w-6" />
               </a>
-              <a href="https://www.github.com/YBenjaminPCondori" className="text-blue-300 hover:text-white transition-colors">
+              <a href="https://www.github.com/YBenjaminPCondori" className="text-teal-300 hover:text-white transition-colors">
                 <SiGithub className="h-6 w-6" />
               </a>
-              <a href="mailto:y.benjamin@ybenpc.com" className="text-blue-300 hover:text-white transition-colors">
+              <a href="mailto:y.benjamin@ybenpc.com" className="text-teal-300 hover:text-white transition-colors">
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                 </svg>
@@ -84,7 +85,7 @@ export default function HeroSection() {
           </div>
 
           <div className="relative animate-fade-in">
-            <div className="bg-blue-100 rounded-2xl p-8">
+            <div className="bg-purple-100 rounded-2xl p-8">
               <img 
                 src="/img/CSE.jpg" 
                 alt="Professional engineer working on computer systems" 
