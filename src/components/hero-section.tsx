@@ -56,14 +56,14 @@ export default function HeroSection() {
               <Button
                 variant="outline" 
                 onClick={handleDownloadResume}
-                className="border-primary text-primary hover:bg-primary hover:text-white font-semibold">
+                className="border-primary text-white hover:bg-primary hover:text-white font-semibold">
                 <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
                 Download Resume
               </Button>
               <Button 
                 variant="outline" 
                 onClick={handleViewProjects}
-                className="border-primary text-primary hover:bg-primary hover:text-white font-semibold">
+                className="border-primary text-white hover:bg-primary hover:text-white font-semibold">
                 View Projects
                 <ExternalLink className="ml-2 h-4 w-4" />
               </Button>
