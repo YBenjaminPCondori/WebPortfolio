@@ -36,7 +36,7 @@ const projects = [
     description:
       "Developed and programmed a PIC16F877A with C and Assembly to control LEDs, 7-segment, and LCD display. Used MPLAB XC8 and mLoader.",
     image:
-      "/img/pic-microcontoller-system.jpg",
+      "/img/pic-microcontoller-system.png",
     technologies: ["PIC16F877A", "Embedded C", "Assembly", "MPLAB"],
     category: "embedded",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/PIC16F1877-Home-Monitoring-System-Project",
@@ -48,7 +48,7 @@ const projects = [
     description:
       "Python + TensorFlow system using edge AI to detect office occupancy, dynamically adjust conditions, and optimize energy use. Deployed on Raspberry Pi.",
     image:
-      "",
+      "/img/occupancy-monitoring.png",
     technologies: ["Python", "TensorFlow", "TinyML", "Raspberry Pi"],
     category: "ml",
     githubUrl: "https://github.com/YBenjaminPCondori/Machine-Learning-Gen-AI/tree/main/Occupancy-Monitoring-Conv1D-System-with-Gaussian-Data-Compression",
@@ -60,7 +60,7 @@ const projects = [
     description:
       "Designed, simulated, and debugged a sequence detector state machine on a NEXYS FPGA board using VHDL. Included power analysis and Vivado simulation.",
     image:
-      "/img/vhdl-fpga-system.jpg",
+      "/img/vhdl-fpga-system.png",
     technologies: ["VHDL", "FPGA", "Vivado", "NEXYS"],
     category: "embedded",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/FPGA-Sequence-Detector-Projects",
@@ -72,7 +72,7 @@ const projects = [
     description:
       "Built a real-time video pipeline using Python, OpenCV, and Raspberry Pi to detect red-dot objects and track motion. Networked with socket programming.",
     image:
-      "/img/dot-following-rpi.jpg",
+      "/img/dot-following-rpi.png",
     technologies: ["Python", "OpenCV", "Raspberry Pi", "Sockets"],
     category: "software",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/Dot-Tracking-RaspberryPi-Project",
@@ -85,7 +85,7 @@ const projects = [
     description:
       "Built a Line-Following Robot using the MSP4320.",
     image:
-      "/img/",
+      "/img/line-following-robot.png",
     technologies: ["Python", "OpenCV", "Raspberry Pi", "Sockets"],
     category: "software",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/Line-Following-Robot-Project",
