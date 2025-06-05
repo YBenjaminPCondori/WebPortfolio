@@ -12,7 +12,7 @@ const projects = [
     description:
       "IoT system using Python and Arduino IDE to collect motion sensor data, send it to ThingSpeak, and generate CSVs for visualization.",
     image:
-      "/img/iot-thingspeak-system.jpg",
+      "/img/iot-thingspeak-system.png",
     technologies: ["Python", "Arduino", "ThingSpeak", "IoT"],
     category: "embedded",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/ThingSpeak-IoT-Arduino-Project",
@@ -48,7 +48,7 @@ const projects = [
     description:
       "Python + TensorFlow system using edge AI to detect office occupancy, dynamically adjust conditions, and optimize energy use. Deployed on Raspberry Pi.",
     image:
-      "/img/occupancy-monitoring.png",
+      "/img/occupancy--system.png",
     technologies: ["Python", "TensorFlow", "TinyML", "Raspberry Pi"],
     category: "ml",
     githubUrl: "https://github.com/YBenjaminPCondori/Machine-Learning-Gen-AI/tree/main/Occupancy-Monitoring-Conv1D-System-with-Gaussian-Data-Compression",
