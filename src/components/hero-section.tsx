@@ -31,9 +31,8 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-slide-up">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-6xl font-bold text-blue-300 leading-tight">
-                Computer
-                <span className="text-primary block">Engineering</span>
+              <h1 className="text-4xl md:text-6xl font-bold text-blue-300 leading-tight">Computer Systems
+                <span className="text-4xl md:text-6xl font-bold text-blue-300 leading-tight">Engineering</span>
               </h1>
               <p className="text-xl text-slate-100 leading-relaxed max-w-lg">
                 Passionate about building innovative solutions at the intersection of software, hardware, and artificial intelligence.
@@ -87,7 +86,7 @@ export default function HeroSection() {
           <div className="relative animate-fade-in">
             <div className="bg-blue-100 rounded-2xl p-8">
               <img 
-                src="/output.jpg" 
+                src="/img/CSE.jpg" 
                 alt="Professional engineer working on computer systems" 
                 className="rounded-xl shadow-2xl w-full h-auto animate-float"
               />

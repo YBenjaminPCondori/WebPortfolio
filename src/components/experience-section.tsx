@@ -76,7 +76,6 @@ const experiences = [
   },
 ];
 
-
 export default function ExperienceSection() {
   return (
     <section
@@ -113,10 +112,10 @@ export default function ExperienceSection() {
                             {exp.company}
                           </p>
                         </div>
-                        <Badge variant={exp.current ? "default" : "primary"} className="text-sm">
-                          {exp.period}
-                        </Badge>
-              F        </div>
+                       <Badge variant={exp.current ? "default" : "primary"} className="text-sm">
+                    {exp.period}
+                  </Badge>
+                </div>
                       
                       <p className="text-slate-600 mb-4">{exp.description}</p>
                       

@@ -12,7 +12,7 @@ const projects = [
     description:
       "IoT system using Python and Arduino IDE to collect motion sensor data, send it to ThingSpeak, and generate CSVs for visualization.",
     image:
-      "/",
+      "/img/iot-thingspeak-system.jpg",
     technologies: ["Python", "Arduino", "ThingSpeak", "IoT"],
     category: "embedded",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/ThingSpeak-IoT-Arduino-Project",
@@ -24,7 +24,7 @@ const projects = [
     description:
       "Java Swing app for secure banking and supermarket operations. Used UML diagrams to model users, access, and workflows.",
     image:
-      "/img/banking.jpg",
+      "/img/banking-management-system.jpg",
     technologies: ["Java", "Swing", "UML"],
     category: "software",
     githubUrl: "https://github.com/YBenjaminPCondori/Software-Projects/tree/main/Banking-Management-System",
@@ -36,7 +36,7 @@ const projects = [
     description:
       "Developed and programmed a PIC16F877A with C and Assembly to control LEDs, 7-segment, and LCD display. Used MPLAB XC8 and mLoader.",
     image:
-      "/",
+      "/img/pic-microcontoller-system.jpg",
     technologies: ["PIC16F877A", "Embedded C", "Assembly", "MPLAB"],
     category: "embedded",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/PIC16F1877-Home-Monitoring-System-Project",
@@ -60,7 +60,7 @@ const projects = [
     description:
       "Designed, simulated, and debugged a sequence detector state machine on a NEXYS FPGA board using VHDL. Included power analysis and Vivado simulation.",
     image:
-      "/img/fpga.jpg",
+      "/img/vhdl-fpga-system.jpg",
     technologies: ["VHDL", "FPGA", "Vivado", "NEXYS"],
     category: "embedded",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/FPGA-Sequence-Detector-Projects",
@@ -72,7 +72,7 @@ const projects = [
     description:
       "Built a real-time video pipeline using Python, OpenCV, and Raspberry Pi to detect red-dot objects and track motion. Networked with socket programming.",
     image:
-      "/",
+      "/img/dot-following-rpi.jpg",
     technologies: ["Python", "OpenCV", "Raspberry Pi", "Sockets"],
     category: "software",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/Dot-Tracking-RaspberryPi-Project",
@@ -85,7 +85,7 @@ const projects = [
     description:
       "Built a Line-Following Robot using the MSP4320.",
     image:
-      "/",
+      "/img/",
     technologies: ["Python", "OpenCV", "Raspberry Pi", "Sockets"],
     category: "software",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/Line-Following-Robot-Project",
