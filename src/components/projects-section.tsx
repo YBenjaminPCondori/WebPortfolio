@@ -24,7 +24,7 @@ const projects = [
     description:
       "Java Swing app for secure banking and supermarket operations. Used UML diagrams to model users, access, and workflows.",
     image:
-      "/img/banking-management-system.jpg",
+      "/img/banking-management-system.png",
     technologies: ["Java", "Swing", "UML"],
     category: "software",
     githubUrl: "https://github.com/YBenjaminPCondori/Software-Projects/tree/main/Banking-Management-System",
@@ -48,7 +48,7 @@ const projects = [
     description:
       "Python + TensorFlow system using edge AI to detect office occupancy, dynamically adjust conditions, and optimize energy use. Deployed on Raspberry Pi.",
     image:
-      "/img/occupancy--system.png",
+      "/img/occupancy-monitoring-system.png",
     technologies: ["Python", "TensorFlow", "TinyML", "Raspberry Pi"],
     category: "ml",
     githubUrl: "https://github.com/YBenjaminPCondori/Machine-Learning-Gen-AI/tree/main/Occupancy-Monitoring-Conv1D-System-with-Gaussian-Data-Compression",
