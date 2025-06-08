@@ -57,7 +57,7 @@ export default function Navigation() {
   return (
     <nav
       className={`fixed top-0 w-full z-50 border-slate-200 transition-colors duration-300 ${
-        scrolled ? "bg-primary/20 backdrop-blur shadow" : "bg-transparent"
+        scrolled ? "bg-blue-200 shadow" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -70,7 +70,7 @@ export default function Navigation() {
               <button
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className={`border border-white rounded-lg px-3 py-1 text-slate-600 transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:scale-105${
+                className={`border border-blue-200 bg-blue-200 rounded-lg px-3 py-1 text-black transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:scale-105${
                   activeSection === link.href.substring(1) ? " nav-active" : ""
                 }`}
               >
@@ -92,7 +92,7 @@ export default function Navigation() {
                   <button
                     key={link.href}
                     onClick={() => handleNavClick(link.href)}
-                    className={`border border-white rounded-lg px-3 py-2 text-lg text-slate-600 transition-all duration-300 ease-in-out text-left hover:bg-white hover:text-black hover:scale-105${
+                    className={`border border-blue-200 bg-blue-200 rounded-lg px-3 py-2 text-lg text-black transition-all duration-300 ease-in-out text-left hover:bg-black hover:text-white hover:scale-105${
                       activeSection === link.href.substring(1) ? " nav-active" : ""
                     }`}
                   >
