@@ -25,8 +25,7 @@ export default function HeroSection() {
   return (
    <section
   id="home"
-  className="pt-16 min-h-screen flex items-center bg-black"
->
+  className="pt-16 min-h-screen flex items-center bg-black">
   <div className="absolute inset-0 pointer-events-none overflow-hidden">
     <span className="shape w-24 h-24 rounded-full bg-teal-300 top-10 left-10 animate-shape1"></span>
     <span className="shape w-16 h-16 bg-teal-300 top-1/2 right-20 rotate-45 animate-shape2"></span>
@@ -62,16 +61,14 @@ export default function HeroSection() {
           <Button
             variant="default"
             onClick={handleDownloadResume}
-            className="bg-[lightblue] text-black hover:bg-sky-300 font-semibold"
-          >
+            className="bg-[lightblue] text-black hover:bg-sky-300 font-semibold">
             <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
             Download Resume
           </Button>
           <Button
             variant="default"
             onClick={handleViewProjects}
-            className="bg-[lightblue] text-black hover:bg-sky-300 font-semibold"
-          >
+            className="bg-[lightblue] text-black hover:bg-sky-300 font-semibold">
             View Projects
             <ExternalLink className="ml-2 h-4 w-4" />
           </Button>
@@ -95,3 +92,4 @@ export default function HeroSection() {
   </div>
 </section>
 );
+}
