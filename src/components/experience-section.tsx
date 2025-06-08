@@ -99,7 +99,7 @@ export default function ExperienceSection() {
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.5 });
 
     itemRefs.current.forEach((el) => el && observer.observe(el));
     return () => observer.disconnect();
@@ -131,7 +131,7 @@ export default function ExperienceSection() {
                 ref={(el) => (itemRefs.current[index] = el)}
                 className={`relative flex items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''} ${visibleItems.includes(index) ? 'reveal-show' : 'reveal-hidden'}`}
               >
-                <div className={`absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 rounded-full border-4 border-white shadow-lg bg-sky-200 ${visibleItems.includes(index) ? 'grow' : 'scale-50'}`}></div>
+                <div className={`absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 rounded-full border-4 border-white shadow-lg bg-sky-200 ${visibleItems.includes(index) ? 'grow' : 'scale-50'}`}></div>
 
                 <div className={`ml-16 md:ml-0 md:w-1/2 ${index % 2 === 1 ? 'md:pl-12' : 'md:pr-12'}`}>
                   <Card className="bg-sky-100 hover:shadow-xl border border-sky-200 transition-shadow">

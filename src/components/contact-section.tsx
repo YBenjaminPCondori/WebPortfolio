@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { Download, Mail } from "lucide-react";
 import { SiLinkedin, SiGithub } from "react-icons/si";
 
@@ -63,12 +64,14 @@ export default function ContactSection() {
                   </div>
               <h3 className="font-bold text-blue-500 mb-2">{method.title}</h3>
                   <p className="text-blue-500 mb-4">{method.value}</p>
-                  <a
-                    href={method.link}
-                    className="text-[lightblue] hover:text-blue-700 font-medium transition-colors"
-                  >
-                    {method.action}
-                  </a>
+                  <Badge variant="primary" className="cursor-pointer inline-block">
+                    <a
+                      href={method.link}
+                      className="text-white hover:text-white"
+                    >
+                      {method.action}
+                    </a>
+                  </Badge>
                 </CardContent>
               </Card>
             );
