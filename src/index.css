@@ -119,6 +119,80 @@
   animation: slide-up 0.8s ease-out;
 }
 
+@keyframes shape1 {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(180deg);
+  }
+}
+
+@keyframes shape2 {
+  0%, 100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(30px) rotate(90deg);
+  }
+}
+
+@keyframes shape3 {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+}
+
+.shape {
+  position: absolute;
+  opacity: 0.15;
+}
+
+.triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.animate-shape1 {
+  animation: shape1 7s ease-in-out infinite;
+}
+
+.animate-shape2 {
+  animation: shape2 9s ease-in-out infinite;
+}
+
+.animate-shape3 {
+  animation: shape3 6s ease-in-out infinite;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.grow {
+  animation: grow 0.6s ease-out forwards;
+}
+
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.reveal-show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
 /* Gradient backgrounds */
 
 

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogFooter, DialogTitle } from "@/components/ui/dialog";
 import { ExternalLink, Github } from "lucide-react";
 
 // You can replace the image URLs with real screenshots if you have them
@@ -105,6 +106,7 @@ const categories = [
 
 export default function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState("all");
+  const [selectedProject, setSelectedProject] = useState<typeof projects[number] | null>(null);
 
   const filteredProjects =
     activeCategory === "all"
@@ -149,7 +151,8 @@ export default function ProjectsSection() {
           {filteredProjects.map((project) => (
             <Card
               key={project.id}
-              className="bg-sky-100 border border-sky-200 overflow-hidden hover:shadow-xl transition-all duration-300 project-card"
+              onClick={() => setSelectedProject(project)}
+              className="bg-sky-100 border border-sky-200 overflow-hidden hover:shadow-xl transition-all duration-300 project-card cursor-pointer"
             >
               <div className="relative">
                 <img
@@ -198,6 +201,26 @@ export default function ProjectsSection() {
             </Card>
           ))}
         </div>
+        <Dialog open={!!selectedProject} onOpenChange={(o) => !o && setSelectedProject(null)}>
+          <DialogContent>
+            {selectedProject && (
+              <>
+                <DialogTitle>{selectedProject.title}</DialogTitle>
+                <p className="text-blue-500 mb-4">{selectedProject.description}</p>
+                <DialogFooter className="flex space-x-2">
+                  <Button asChild>
+                    <a href={selectedProject.githubUrl} target="_blank" rel="noopener noreferrer">Source Code</a>
+                  </Button>
+                  {selectedProject.liveUrl && (
+                    <Button variant="secondary" asChild>
+                      <a href={selectedProject.liveUrl} target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    </Button>
+                  )}
+                </DialogFooter>
+              </>
+            )}
+          </DialogContent>
+        </Dialog>
       </div>
     </section>
   );

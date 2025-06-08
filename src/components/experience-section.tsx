@@ -1,11 +1,14 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { useEffect, useRef, useState } from "react";
 
 const experiences = [
   {
     id: 1,
     title: "PDC Careers Ambassador",
     company: "Brunel University London",
+    link: "https://www.brunel.ac.uk/pdc",
     period: "Nov 2023 – July 2025",
     description: "Supported Brunel’s Professional Career Development Centre (PDC) by assisting at university careers events, distributing materials, and engaging with students and staff.",
     technologies: ["Event Support", "Communication", "Teamwork"],
@@ -15,6 +18,7 @@ const experiences = [
     id: 2,
     title: "Systems Design Engineer Intern",
     company: "Brunel University London",
+    link: "https://www.brunel.ac.uk",
     period: "Feb 2024 – July 2024",
     description: "Contributing to systems and product design, technical reporting, and CAD/CAM tasks. Focused on sustainable engineering solutions and water management.",
     technologies: ["CAD", "Technical Reporting", "Sustainability"],
@@ -24,6 +28,7 @@ const experiences = [
     id: 3,
     title: "Junior Assistant Plumber",
     company: "JP Plumbing and Heating",
+    link: "#",
     period: "May 2023 – July 2023",
     description: "Assisted in plumbing installations and repairs, sourced parts, and provided on-site support for commercial and residential clients.",
     technologies: ["Pipefitting", "Customer Service", "Problem Solving"],
@@ -33,6 +38,7 @@ const experiences = [
     id: 4,
     title: "Sales Team Member / Stock Room Operative",
     company: "Clarks",
+    link: "https://www.clarks.com",
     period: "May 2022 – July 2022",
     description: "Provided retail support, assisted customers, managed stock, and maintained store organization.",
     technologies: ["Retail", "Sales", "Stock Management"],
@@ -42,6 +48,7 @@ const experiences = [
     id: 5,
     title: "Cleaning Operative",
     company: "Nviro Limited",
+    link: "https://www.nviro.co.uk",
     period: "Jan 2021 – Apr 2022",
     description: "Maintained cleanliness and hygiene standards in university buildings, ensuring a safe environment for staff and students.",
     technologies: ["Health & Safety", "Attention to Detail"],
@@ -51,6 +58,7 @@ const experiences = [
     id: 6,
     title: "Junior WordPress Developer",
     company: "Complex Creative",
+    link: "https://www.complexcreative.com",
     period: "Jul 2021 – Aug 2021",
     description: "Developed and maintained WordPress websites, collaborated with designers, and implemented new web features.",
     technologies: ["WordPress", "Web Design", "CMS"],
@@ -60,6 +68,7 @@ const experiences = [
     id: 7,
     title: "Food Bank Volunteer",
     company: "Masjid Ul Ibrahim",
+    link: "#",
     period: "Feb 2021 – Aug 2021",
     description: "Supported food distribution to local community members during the pandemic, offering direct client support.",
     technologies: ["Community Support", "Teamwork"],
@@ -69,6 +78,7 @@ const experiences = [
     id: 8,
     title: "IT Teaching Assistant",
     company: "Bonny Downs Community Association",
+    link: "https://www.bonnydowns.org",
     period: "Dec 2020 – Jan 2021",
     description: "Assisted teaching computer literacy to children and adults, providing technical support and guidance.",
     technologies: ["Teaching", "Technical Support"],
@@ -77,6 +87,24 @@ const experiences = [
 ];
 
 export default function ExperienceSection() {
+  const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [visibleItems, setVisibleItems] = useState<number[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const i = Number(entry.target.getAttribute('data-index'));
+        if (entry.isIntersecting) {
+          setVisibleItems((v) => (v.includes(i) ? v : [...v, i]));
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    itemRefs.current.forEach((el) => el && observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section
       id="experience"
@@ -97,8 +125,13 @@ export default function ExperienceSection() {
           {/* Experience Items */}
           <div className="space-y-12">
             {experiences.map((exp, index) => (
-              <div key={exp.id} className={`relative flex items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
-                <div className="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 rounded-full border-4 border-white shadow-lg bg-sky-200"></div>
+              <div
+                key={exp.id}
+                data-index={index}
+                ref={(el) => (itemRefs.current[index] = el)}
+                className={`relative flex items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''} ${visibleItems.includes(index) ? 'reveal-show' : 'reveal-hidden'}`}
+              >
+                <div className={`absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 rounded-full border-4 border-white shadow-lg bg-sky-200 ${visibleItems.includes(index) ? 'grow' : 'scale-50'}`}></div>
 
                 <div className={`ml-16 md:ml-0 md:w-1/2 ${index % 2 === 1 ? 'md:pl-12' : 'md:pr-12'}`}>
                   <Card className="bg-sky-100 hover:shadow-xl border border-sky-200 transition-shadow">
@@ -110,20 +143,24 @@ export default function ExperienceSection() {
                             {exp.company}
                           </p>
                         </div>
-                       <Badge variant={exp.current ? "default" : "primary"} className="text-sm">
-                    {exp.period}
-                  </Badge>
-                </div>
-                      
+                        <Badge variant={exp.current ? 'default' : 'primary'} className="text-sm">
+                          {exp.period}
+                        </Badge>
+                      </div>
+
                       <p className="text-blue-500 mb-4">{exp.description}</p>
-                      
-                      <div className="flex flex-wrap gap-2">
+
+                      <div className="flex flex-wrap gap-2 mb-4">
                         {exp.technologies.map((tech) => (
                           <Badge key={tech} variant="primary" className="text-xs">
                             {tech}
                           </Badge>
                         ))}
                       </div>
+
+                      <Button variant="outline" size="sm" asChild>
+                        <a href={exp.link} target="_blank" rel="noopener noreferrer">Learn More</a>
+                      </Button>
                     </CardContent>
                   </Card>
                 </div>
