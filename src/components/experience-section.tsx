@@ -80,12 +80,12 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="py-20 bg-gradient-to-b from-purple-800 via-purple-700 to-purple-600"
+      className="py-20 bg-black"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">PROFESSIONAL EXPERIENCE</h2>
-          <p className="text-xl text-slate-200 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-500">PROFESSIONAL EXPERIENCE</h2>
+          <p className="text-xl text-blue-500 max-w-2xl mx-auto">
             Building expertise through hands-on experience in software development, embedded systems, and machine learning.
           </p>
         </div>
@@ -98,17 +98,15 @@ export default function ExperienceSection() {
           <div className="space-y-12">
             {experiences.map((exp, index) => (
               <div key={exp.id} className={`relative flex items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
-                <div className={`absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 rounded-full border-4 border-white shadow-lg ${
-                  exp.current ? 'bg-primary' : 'bg-slate-400'
-                }`}></div>
+                <div className="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 rounded-full border-4 border-white shadow-lg bg-black"></div>
                 
                 <div className={`ml-16 md:ml-0 md:w-1/2 ${index % 2 === 1 ? 'md:pl-12' : 'md:pr-12'}`}>
-                  <Card className="bg-white/90 hover:shadow-xl border border-purple-500 transition-shadow">
+                  <Card className="bg-black hover:shadow-xl border border-black transition-shadow">
                     <CardContent className="p-6">
                       <div className="flex items-start justify-between mb-4">
                         <div>
-                          <h3 className="text-xl font-bold text-black">{exp.title}</h3>
-                          <p className={`font-medium ${exp.current ? 'text-primary' : 'text-slate-600'}`}>
+                          <h3 className="text-xl font-bold text-blue-500">{exp.title}</h3>
+                          <p className="font-medium text-blue-500">
                             {exp.company}
                           </p>
                         </div>
@@ -117,7 +115,7 @@ export default function ExperienceSection() {
                   </Badge>
                 </div>
                       
-                      <p className="text-slate-600 mb-4">{exp.description}</p>
+                      <p className="text-blue-500 mb-4">{exp.description}</p>
                       
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech) => (
