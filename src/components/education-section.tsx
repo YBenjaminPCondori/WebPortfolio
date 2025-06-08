@@ -33,7 +33,7 @@ export default function EducationSection() {
   return (
     <section
       id="education"
-      className="py-20 bg-black"
+      className="py-20 bg-sky-50"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -45,9 +45,9 @@ export default function EducationSection() {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Current Education */}
-          <div className="bg-black p-8 rounded-2xl text-blue-500">
+          <div className="bg-sky-100 p-8 rounded-2xl text-blue-500">
             <div className="flex items-start space-x-4">
-              <div className="bg-black p-3 rounded-lg">
+              <div className="bg-sky-200 p-3 rounded-lg">
                 <GraduationCap className="h-6 w-6" />
               </div>
               <div className="flex-1">
@@ -73,10 +73,10 @@ export default function EducationSection() {
           {/* Skills & Certifications */}
           <div className="space-y-8">
             {/* Technical Skills */}
-            <Card className="bg-black border border-black">
+            <Card className="bg-sky-100 border border-sky-200">
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold text-blue-500 mb-6 flex items-center">
-                  <div className="bg-black p-2 rounded-lg mr-3">
+                  <div className="bg-sky-200 p-2 rounded-lg mr-3">
                     <svg className="h-5 w-5 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
                     </svg>
@@ -109,10 +109,10 @@ export default function EducationSection() {
             </Card>
 
             {/* Certifications */}
-            <Card className="bg-black border border-black">
+            <Card className="bg-sky-100 border border-sky-200">
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold text-blue-500 mb-6 flex items-center">
-                  <div className="bg-black p-2 rounded-lg mr-3">
+                  <div className="bg-sky-200 p-2 rounded-lg mr-3">
                     <Award className="h-5 w-5 text-blue-500" />
                   </div>
                   Certifications
@@ -132,7 +132,7 @@ export default function EducationSection() {
 
         {/* Achievements */}
         <div className="mt-12">
-          <Card className="bg-black border border-black">
+          <Card className="bg-sky-100 border border-sky-200">
             <CardContent className="p-8">
               <h3 className="text-xl font-bold text-blue-500 mb-6 text-center">Achievements & Activities</h3>
               <div className="grid md:grid-cols-3 gap-6">
@@ -140,7 +140,7 @@ export default function EducationSection() {
                   const IconComponent = achievement.icon;
                   return (
                     <div key={index} className="text-center">
-                      <div className="bg-black w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <div className="bg-sky-200 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                         <IconComponent className="h-8 w-8 text-blue-500" />
                       </div>
                       <h4 className="font-semibold text-blue-500 mb-1">{achievement.title}</h4>

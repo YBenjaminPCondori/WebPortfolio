@@ -80,7 +80,7 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="py-20 bg-black"
+      className="py-20 bg-sky-50"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -98,10 +98,10 @@ export default function ExperienceSection() {
           <div className="space-y-12">
             {experiences.map((exp, index) => (
               <div key={exp.id} className={`relative flex items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
-                <div className="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 rounded-full border-4 border-white shadow-lg bg-black"></div>
-                
+                <div className="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 rounded-full border-4 border-white shadow-lg bg-sky-200"></div>
+
                 <div className={`ml-16 md:ml-0 md:w-1/2 ${index % 2 === 1 ? 'md:pl-12' : 'md:pr-12'}`}>
-                  <Card className="bg-black hover:shadow-xl border border-black transition-shadow">
+                  <Card className="bg-sky-100 hover:shadow-xl border border-sky-200 transition-shadow">
                     <CardContent className="p-6">
                       <div className="flex items-start justify-between mb-4">
                         <div>

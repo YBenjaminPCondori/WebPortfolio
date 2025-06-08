@@ -42,7 +42,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-20 bg-black"
+      className="py-20 bg-sky-50"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -58,7 +58,7 @@ export default function ContactSection() {
             return (
               <Card key={index} className="text-center hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
-                  <div className="bg-black w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="bg-sky-200 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="h-6 w-6 text-blue-500" />
                   </div>
               <h3 className="font-bold text-blue-500 mb-2">{method.title}</h3>
@@ -77,9 +77,9 @@ export default function ContactSection() {
 
         {/* Download Resume CTA */}
         <div className="text-center mt-12">
-          <Button 
+          <Button
             onClick={handleDownloadResume}
-            className="bg-black text-blue-500 px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
+            className="bg-sky-200 text-blue-500 px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
           >
             <Download className="mr-2 h-5 w-5" />
             Download Full Resume

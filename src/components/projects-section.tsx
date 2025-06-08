@@ -114,7 +114,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="py-20 bg-black"
+      className="py-20 bg-sky-50"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -145,7 +145,7 @@ export default function ProjectsSection() {
           {filteredProjects.map((project) => (
             <Card
               key={project.id}
-              className="bg-black border border-black overflow-hidden hover:shadow-xl transition-all duration-300 project-card"
+              className="bg-sky-100 border border-sky-200 overflow-hidden hover:shadow-xl transition-all duration-300 project-card"
             >
               <div className="relative">
                 <img
