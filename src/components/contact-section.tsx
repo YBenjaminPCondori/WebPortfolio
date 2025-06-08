@@ -42,7 +42,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-20 bg-sky-50"
+      className="py-20 bg-black"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -59,13 +59,13 @@ export default function ContactSection() {
               <Card key={index} className="text-center hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="bg-sky-200 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <IconComponent className="h-6 w-6 text-blue-500" />
+                    <IconComponent className="h-6 w-6 text-[lightblue]" />
                   </div>
               <h3 className="font-bold text-blue-500 mb-2">{method.title}</h3>
                   <p className="text-blue-500 mb-4">{method.value}</p>
-                  <a 
-                    href={method.link} 
-                    className="text-blue-500 hover:text-blue-700 font-medium transition-colors"
+                  <a
+                    href={method.link}
+                    className="text-[lightblue] hover:text-blue-700 font-medium transition-colors"
                   >
                     {method.action}
                   </a>
