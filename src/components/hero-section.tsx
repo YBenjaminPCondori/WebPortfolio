@@ -35,7 +35,7 @@ export default function HeroSection() {
       <div className="w-full px-0 py-20">
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 animate-slide-up lg:col-span-1 w-full text-left pl-0 sm:pl-0 md:pl-0 -ml-10 sm:-ml-16 md:-ml-24">
+          <div className="space-y-8 animate-slide-up lg:col-span-1 w-full text-left pl-0 sm:pl-0 md:pl-0 -ml-4 sm:-ml-6 md:-ml-8">
 
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl font-bold text-blue-500 leading-tight text-left">
