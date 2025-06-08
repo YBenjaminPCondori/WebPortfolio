@@ -27,6 +27,11 @@ export default function HeroSection() {
       id="home"
       className="pt-16 min-h-screen flex items-center bg-black"
     >
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <span className="shape w-24 h-24 rounded-full bg-teal-300 top-10 left-10 animate-shape1"></span>
+        <span className="shape w-16 h-16 bg-teal-300 top-1/2 right-20 rotate-45 animate-shape2"></span>
+        <span className="shape triangle w-20 h-20 bg-teal-300 bottom-10 left-1/3 animate-shape3"></span>
+      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-slide-up">
