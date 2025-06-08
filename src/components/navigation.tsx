@@ -62,7 +62,7 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="font-bold text-xl text-slate-800">Y. BENJAMIN PEREZ. ENGINEERING PORTFOLIO</div>
+          <div className="font-bold -ml-2 sm:-ml-3 md:-ml-4 text-xl text-slate-800">Y. BENJAMIN PEREZ. ENGINEERING PORTFOLIO</div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
@@ -70,8 +70,8 @@ export default function Navigation() {
               <button
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className={`text-slate-600 hover:text-primary transition-colors ${
-                  activeSection === link.href.substring(1) ? "nav-active" : ""
+                className={`border border-white rounded-lg px-3 py-1 text-slate-600 transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:scale-105${
+                  activeSection === link.href.substring(1) ? " nav-active" : ""
                 }`}
               >
                 {link.label}
@@ -92,8 +92,8 @@ export default function Navigation() {
                   <button
                     key={link.href}
                     onClick={() => handleNavClick(link.href)}
-                    className={`text-lg text-slate-600 hover:text-primary transition-colors text-left ${
-                      activeSection === link.href.substring(1) ? "nav-active" : ""
+                    className={`border border-white rounded-lg px-3 py-2 text-lg text-slate-600 transition-all duration-300 ease-in-out text-left hover:bg-white hover:text-black hover:scale-105${
+                      activeSection === link.href.substring(1) ? " nav-active" : ""
                     }`}
                   >
                     {link.label}
