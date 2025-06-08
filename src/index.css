@@ -121,17 +121,18 @@
 
 /* Gradient backgrounds */
 
+
 .bg-gradient-primary {
-  background: black;
+  background: linear-gradient(to bottom, white, #e0f2fe);
 }
 
 .bg-gradient-light {
-  background: black;
+  background: linear-gradient(to bottom, white, #e0f2fe);
 }
 
 /* Timeline styles */
 .timeline-line {
-  background: black;
+  background: #bae6fd;
 }
 
 /* Project card hover effects */
