@@ -88,7 +88,7 @@ export default function EducationSection() {
                     <h4 className="font-semibold text-blue-500 mb-2">Programming Languages</h4>
                     <div className="flex flex-wrap gap-2">
                       {skills.languages.map((lang) => (
-                        <Badge key={lang} variant="secondary" className="text-sm">
+                        <Badge key={lang} variant="primary" className="text-sm">
                           {lang}
                         </Badge>
                       ))}
@@ -98,7 +98,7 @@ export default function EducationSection() {
                     <h4 className="font-semibold text-blue-500 mb-2">Frameworks & Tools</h4>
                     <div className="flex flex-wrap gap-2">
                       {skills.frameworks.map((framework) => (
-                        <Badge key={framework} variant="secondary" className="text-sm">
+                        <Badge key={framework} variant="primary" className="text-sm">
                           {framework}
                         </Badge>
                       ))}

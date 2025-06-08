@@ -137,8 +137,8 @@ export default function ProjectsSection() {
               onClick={() => setActiveCategory(category.id)}
               className={
                 activeCategory === category.id
-                  ? "bg-teal-200 text-teal-800 border-teal-200 font-medium"
-                  : "border-teal-200 text-teal-800 font-medium"
+                  ? "bg-teal-200 text-teal-800 border-teal-200 font-medium transition-transform duration-300"
+                  : "text-teal-800 font-medium border-0 hover:bg-teal-200 hover:text-teal-800 hover:border hover:border-teal-200 hover:scale-105 transition-transform duration-300"
               }
             >
               {category.label}
