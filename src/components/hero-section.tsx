@@ -36,7 +36,7 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-slide-up">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-6xl font-bold text-blue-500 leading-tight -ml-2 sm:-ml-3 md:-ml-4">
+              <h1 className="text-4xl md:text-6xl font-bold text-blue-500 leading-tight -ml-7 sm:-ml-3 md:-ml-4">
                 Computer
                 <span className="text-blue-500 block">Engineering</span>
               </h1>
