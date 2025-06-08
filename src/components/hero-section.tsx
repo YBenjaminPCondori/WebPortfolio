@@ -34,9 +34,10 @@ export default function HeroSection() {
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 animate-slide-up">
+          <div className="space-y-8 animate-slide-up lg:col-span-1 w-full text-left pl-0 sm:pl-0 md:pl-0">
+
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-6xl font-bold text-blue-500 leading-tight -ml-4 text-left">
+              <h1 className="text-4xl md:text-6xl font-bold text-blue-500 leading-tight text-left">
                 Computer
                 <span className="text-blue-500 block">Engineering</span>
               </h1>
