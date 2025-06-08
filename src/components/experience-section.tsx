@@ -120,7 +120,7 @@ export default function ExperienceSection() {
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-8 md:left-1/2 transform md:-translate-x-px top-0 bottom-0 w-0.5 timeline-line"></div>
+          <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 timeline-line"></div>
 
           {/* Experience Items */}
           <div className="space-y-12">
