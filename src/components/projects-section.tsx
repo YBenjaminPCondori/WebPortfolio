@@ -131,9 +131,13 @@ export default function ProjectsSection() {
           {categories.map((category) => (
             <Button
               key={category.id}
-              variant={activeCategory === category.id ? "default" : "outline"}
+              variant="outline"
               onClick={() => setActiveCategory(category.id)}
-              className="font-medium"
+              className={
+                activeCategory === category.id
+                  ? "bg-teal-200 text-teal-800 border-teal-200 font-medium"
+                  : "border-teal-200 text-teal-800 font-medium"
+              }
             >
               {category.label}
             </Button>
@@ -181,7 +185,11 @@ export default function ProjectsSection() {
 
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="primary" className="text-xs">
+                    <Badge
+                      key={tech}
+                      variant="primary"
+                      className="text-xs bg-teal-200 text-teal-800 border-transparent"
+                    >
                       {tech}
                     </Badge>
                   ))}
