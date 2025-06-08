@@ -114,14 +114,14 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="py-20 bg-gradient-to-b from-purple-700 via-purple-600 to-purple-500"
+      className="py-20 bg-black"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-500 mb-4">
             Projects and Academic Work
           </h2>
-          <p className="text-xl text-purple-100 max-w-2xl mx-auto">
+          <p className="text-xl text-blue-500 max-w-2xl mx-auto">
             Projects in embedded systems, machine learning, edge AI, microcontrollers, and full-stack software.
           </p>
         </div>
@@ -145,7 +145,7 @@ export default function ProjectsSection() {
           {filteredProjects.map((project) => (
             <Card
               key={project.id}
-              className="bg-white/90 border border-purple-100 overflow-hidden hover:shadow-xl transition-all duration-300 project-card"
+              className="bg-black border border-black overflow-hidden hover:shadow-xl transition-all duration-300 project-card"
             >
               <div className="relative">
                 <img
@@ -156,18 +156,18 @@ export default function ProjectsSection() {
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-bold text-purple-700">{project.title}</h3>
+                  <h3 className="text-xl font-bold text-blue-500">{project.title}</h3>
                   <div className="flex space-x-2">
                     <a
                       href={project.githubUrl}
-                      className="text-slate-400 hover:text-primary transition-colors"
+                      className="text-blue-500 transition-colors"
                     >
                       <Github className="h-5 w-5" />
                     </a>
                     {project.liveUrl && (
                       <a
                         href={project.liveUrl}
-                        className="text-slate-400 hover:text-primary transition-colors"
+                        className="text-blue-500 transition-colors"
                       >
                         <ExternalLink className="h-5 w-5" />
                       </a>
@@ -175,7 +175,7 @@ export default function ProjectsSection() {
                   </div>
                 </div>
 
-                <p className="text-slate-600 mb-4 text-sm leading-relaxed">
+                <p className="text-blue-500 mb-4 text-sm leading-relaxed">
                   {project.description}
                 </p>
 
