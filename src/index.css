@@ -1,25 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/goldman-sans');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 222 47% 11%;
+  --background: 0 0% 0%;
+  --foreground: 240 100% 50%;
   --muted: 210 40% 98%;
   --muted-foreground: 215 16% 47%;
   --popover: 0 0% 100%;
   --popover-foreground: 222 47% 11%;
   --card: 0 0% 100%;
   --card-foreground: 222 47% 11%;
-  --border: 214 32% 91%;
-  --input: 214 32% 91%;
-  --primary: 271 62% 52%;
-  --primary-foreground: 0 0% 100%;
-  --secondary: 210 40% 98%;
-  --secondary-foreground: 222 47% 11%;
-  --accent: 210 40% 98%;
-  --accent-foreground: 222 47% 11%;
+  --border: 0 0% 0%;
+  --input: 0 0% 0%;
+  --primary: 240 100% 50%;
+  --primary-foreground: 0 0% 0%;
+  --secondary: 0 0% 0%;
+  --secondary-foreground: 240 100% 50%;
+  --accent: 0 0% 0%;
+  --accent-foreground: 240 100% 50%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 210 40% 98%;
   --ring: 271 62% 52%;
@@ -32,28 +32,28 @@
 }
 
 .dark {
-  --background: 224 71% 4%;
-  --foreground: 213 31% 91%;
-  --muted: 223 47% 11%;
-  --muted-foreground: 215 16% 57%;
-  --popover: 224 71% 4%;
-  --popover-foreground: 213 31% 91%;
-  --card: 224 71% 4%;
-  --card-foreground: 213 31% 91%;
-  --border: 216 34% 17%;
-  --input: 216 34% 17%;
-  --primary: 271 62% 52%;
-  --primary-foreground: 0 0% 100%;
-  --accent: 216 34% 17%;
-  --accent-foreground: 213 31% 91%;
-  --destructive: 0 63% 31%;
-  --destructive-foreground: 213 31% 91%;
-  --ring: 271 62% 52%;
-  --chart-1: 271 62% 52%;
-  --chart-2: 192 70% 52%;
-  --chart-3: 216 92% 60%;
-  --chart-4: 210 98% 78%;
-  --chart-5: 212 97% 87%;
+  --background: 0 0% 0%;
+  --foreground: 240 100% 50%;
+  --muted: 0 0% 0%;
+  --muted-foreground: 240 100% 50%;
+  --popover: 0 0% 0%;
+  --popover-foreground: 240 100% 50%;
+  --card: 0 0% 0%;
+  --card-foreground: 240 100% 50%;
+  --border: 0 0% 0%;
+  --input: 0 0% 0%;
+  --primary: 240 100% 50%;
+  --primary-foreground: 0 0% 0%;
+  --accent: 0 0% 0%;
+  --accent-foreground: 240 100% 50%;
+  --destructive: 0 0% 0%;
+  --destructive-foreground: 240 100% 50%;
+  --ring: 240 100% 50%;
+  --chart-1: 240 100% 50%;
+  --chart-2: 240 100% 50%;
+  --chart-3: 240 100% 50%;
+  --chart-4: 240 100% 50%;
+  --chart-5: 240 100% 50%;
 }
 
 @layer base {
@@ -63,7 +63,7 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Goldman Sans', system-ui, -apple-system, sans-serif;
   }
 
   html {
@@ -119,18 +119,94 @@
   animation: slide-up 0.8s ease-out;
 }
 
+@keyframes shape1 {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(180deg);
+  }
+}
+
+@keyframes shape2 {
+  0%, 100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(30px) rotate(90deg);
+  }
+}
+
+@keyframes shape3 {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+}
+
+.shape {
+  position: absolute;
+  opacity: 0.15;
+}
+
+.triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.animate-shape1 {
+  animation: shape1 7s ease-in-out infinite;
+}
+
+.animate-shape2 {
+  animation: shape2 9s ease-in-out infinite;
+}
+
+.animate-shape3 {
+  animation: shape3 6s ease-in-out infinite;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+.grow {
+  animation: grow 0.6s ease-out forwards;
+}
+
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.reveal-show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
 /* Gradient backgrounds */
+
+
 .bg-gradient-primary {
-  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(209, 94%, 13%) 100%);
+  background: linear-gradient(to bottom, white, #e0f2fe);
 }
 
 .bg-gradient-light {
-  background: linear-gradient(135deg, hsl(var(--muted)) 0%, hsl(210, 93%, 16%) 100%);
+  background: linear-gradient(to bottom, white, #e0f2fe);
 }
 
 /* Timeline styles */
 .timeline-line {
-  background: linear-gradient(to bottom, hsl(var(--primary)), hsl(var(--primary) / 0.3));
+  background: #bae6fd;
 }
 
 /* Project card hover effects */
