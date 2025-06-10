@@ -143,7 +143,7 @@ const projects = [
     image:
       "/img/inventory-led.png",
     technologies: ["Python", "OpenCV", "ESP32", "LEDs"],
-    category: "hardware",
+    category: "embedded",
     githubUrl: "",
     liveUrl: null,
   },
@@ -155,8 +155,8 @@ const projects = [
     "Developed a Python-based system for processing and classifying ECG signals using machine learning. Implemented signal filtering, feature extraction, and edge detection to extract time series data from images.",
     image:
       "/img/ecg-processing-system.png",
-    technologies: ["Python", "OpenCV", "ESP32", "LEDs"],
-    category: "hardware",
+    technologies: ["Python", "OpenCV"],
+    category: "ml",
     githubUrl: "",
     liveUrl: null,
   },
