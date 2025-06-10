@@ -33,7 +33,7 @@ export default function HeroSection() {
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl font-bold text-blue-300 leading-tight">
                 Computer
-                <span className="text-primary block">Engineering</span>
+                <span className="text-white block">Engineering</span>
               </h1>
               <p className="text-xl text-slate-100 leading-relaxed max-w-lg">
                 Passionate about building innovative solutions at the intersection of software, hardware, and artificial intelligence.

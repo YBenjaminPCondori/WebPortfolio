@@ -92,7 +92,46 @@ const projects = [
     liveUrl: null,
   },
 
+  {
+    id: 8,
+    title: "Photography Front End Static Web Portfolio",
+    description:
+      "Developed, Designed and Implemented a static Front End website for a photographer to showcase her portfolio, and history.",
+    image:
+      "/img/photography-portfolio.png",
+    technologies: ["Python", "OpenCV", "Raspberry Pi", "Sockets"],
+    category: "software",
+    githubUrl: "https://github.com/YBenjaminPCondori/Software-Projects/tree/main/Static%20Front%20End%20Photorgraphy%20Web%20Portfolio",
+    liveUrl: null,
+  },
+
+  {
+    id: 9,
+    title: "Automated Inventory Camera Recording System",
+    description:
+      "Designed and implemented a prototype inventory system using a camera and computer vision to automatically detect, classify, and record items. Utilized Python and OpenCV for image capture and processing, and trained a lightweight neural network for real-time object recognition. Reduced manual entry workload and improved accuracy of inventory logging.",
+    image:
+      "/img/.png",
+    technologies: ["Python", "OpenCV", "Raspberry Pi", "Sockets"],
+    category: "software",
+    githubUrl: "",
+    liveUrl: null,
+  },
+
   
+{
+    id: 10,
+    title: "Smart Tool Inventory Management System",
+    description:
+    "Developed an automated inventory management solution for tracking tools (e.g., screws, hand tools) in manufacturing labs. Integrated ESP8266 D1 Mini microcontrollers and LED indicators for real-time tool status and availability. Combined camera-based object recognition (Python, OpenCV) with IoT connectivity for automated recording and monitoring. System provided instant visual feedback and streamlined tool check-in/check-out, reducing losses and improving operational efficiency.",
+    image:
+      "/img/photography-portfolio.png",
+    technologies: ["Python", "OpenCV", "Raspberry Pi", "Sockets"],
+    category: "software",
+    githubUrl: "",
+    liveUrl: null,
+  },
+
 ];
 
 
