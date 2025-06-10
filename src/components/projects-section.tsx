@@ -38,7 +38,7 @@ const projects = [
       "Developed ano Implemented a Java Swing app for secure transactions, and a user management system to monitor, check out, and logs.",
     image:
       "/img/supermarket-system.png",
-    technologies: ["Python", "OpenCV", "Raspberry Pi", "Sockets"],
+    echnologies: ["Java", "Swing", "UML"],
     category: "software",
     githubUrl: "",
     liveUrl: null,
@@ -101,7 +101,7 @@ const projects = [
       "Built a Line-Following Robot using the MSP4320.",
     image:
       "/img/line-following-robot.png",
-    technologies: ["Python", "OpenCV", "Raspberry Pi", "Sockets"],
+    technologies: ["Code Composer IDE", "Embedded C", "RMSP4320"],
     category: "software",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/Line-Following-Robot-Project",
     liveUrl: null,
@@ -114,51 +114,51 @@ const projects = [
       "Developed, Designed and Implemented a static Front End website for a photographer to showcase her portfolio, and history.",
     image:
       "/img/photography-portfolio.png",
-    technologies: ["Python", "OpenCV", "Raspberry Pi", "Sockets"],
+    technologies: ["Static", "JavaScript", "HTML5", "CSS3"],
     category: "software",
     githubUrl: "https://github.com/YBenjaminPCondori/Software-Projects/tree/main/Static%20Front%20End%20Photorgraphy%20Web%20Portfolio",
     liveUrl: null,
   },
 
-  {
-    id: 10,
-    title: "Automated Inventory Camera Recording System",
-    description:
-      "Designed and implemented a prototype inventory system using a camera and computer vision to automatically detect, classify, and record items. Utilized Python and OpenCV for image capture and processing, and trained a lightweight neural network for real-time object recognition. Reduced manual entry workload and improved accuracy of inventory logging.",
-    image:
-      "/img/hptm-project.png",
-    technologies: ["Python", "OpenCV", "Webcam"],
-    category: "software",
-    githubUrl: "",
-    liveUrl: null,
-  },
+  //{
+  //  id: 10,
+  //  title: "Automated Inventory Camera Recording System",
+  //  description:
+  //    "Designed and implemented a prototype inventory system using a camera and computer vision to automatically detect, classify, and record items. Utilized Python and OpenCV for image capture and processing, and trained a lightweight neural network for real-time object recognition. Reduced manual entry workload and improved accuracy of inventory logging.",
+  //  image:
+  //    "/img/hptm-project.png",
+  //  technologies: ["Python", "OpenCV", "Webcam"],
+  //  category: "software",
+  //  githubUrl: "",
+  //  liveUrl: null,
+  //},
 
   
-{
-    id: 11,
-    title: "Smart Tool Inventory Management System",
-    description:
-    "Developed an automated inventory management solution for tracking tools (e.g., screws, hand tools) in manufacturing labs. Integrated ESP8266 D1 Mini microcontrollers and LED indicators for real-time tool status and availability. Combined camera-based object recognition (Python, OpenCV) with IoT connectivity for automated recording and monitoring. System provided instant visual feedback and streamlined tool check-in/check-out, reducing losses and improving operational efficiency.",
-    image:
-      "/img/inventory-led.png",
-    technologies: ["Python", "OpenCV", "ESP32", "LEDs"],
-    category: "embedded",
-    githubUrl: "",
-    liveUrl: null,
-  },
+//{
+  //  id: 11,
+  //  title: "Smart Tool Inventory Management System",
+  //  description:
+  //  "Developed an automated inventory management solution for tracking tools (e.g., screws, hand tools) in manufacturing labs. Integrated ESP8266 D1 Mini microcontrollers and LED indicators for real-time tool status and availability. Combined camera-based object recognition (Python, OpenCV) with IoT connectivity for automated recording and monitoring. System provided instant visual feedback and streamlined tool check-in/check-out, reducing losses and improving operational efficiency.",
+  //  image:
+  //    "/img/inventory-led.png",
+  //  technologies: ["Python", "OpenCV", "ESP32", "LEDs"],
+  //  category: "embedded",
+  //  githubUrl: "",
+  //  liveUrl: null,
+  //},
 
-{
-    id: 12,
-    title: "ECG Signal Processing and Classification",
-    description:
-    "Developed a Python-based system for processing and classifying ECG signals using machine learning. Implemented signal filtering, feature extraction, and edge detection to extract time series data from images.",
-    image:
-      "/img/ecg-processing-system.png",
-    technologies: ["Python", "OpenCV"],
-    category: "ml",
-    githubUrl: "",
-    liveUrl: null,
-  },
+//{
+  //  id: 12,
+  //  title: "ECG Signal Processing and Classification",
+  //  description:
+  //  "Developed a Python-based system for processing and classifying ECG signals using machine learning. Implemented signal filtering, feature extraction, and edge detection to extract time series data from images.",
+  //  image:
+  //    "/img/ecg-processing-system.png",
+  //  technologies: ["Python", "OpenCV"],
+  //  category: "ml",
+  //  githubUrl: "",
+  //  liveUrl: null,
+  //}, 
 
   {
   id: 13,
