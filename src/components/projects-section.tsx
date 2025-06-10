@@ -21,7 +21,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Java GUI Banking Management System",
+    title: "Java Swing Banking Management System",
     description:
       "Java Swing app for secure banking and supermarket operations. Used UML diagrams to model users, access, and workflows.",
     image:
@@ -31,8 +31,23 @@ const projects = [
     githubUrl: "https://github.com/YBenjaminPCondori/Software-Projects/tree/main/Banking-Management-System",
     liveUrl: null,
   },
-  {
+
+{
     id: 3,
+    title: "JAVA Swing Supermarket Management System",
+    description:
+      "Developed ano Implemented a Java Swing app for secure transactions, and a user management system to monitor, check out, and logs.",
+    image:
+      "/img/supermarket-system.png",
+    technologies: ["Python", "OpenCV", "Raspberry Pi", "Sockets"],
+    category: "software",
+    githubUrl: "",
+    liveUrl: null,
+  },
+
+
+  {
+    id: 4,
     title: "PIC Microcontroller LED/LCD Project",
     description:
       "Developed and programmed a PIC16F877A with C and Assembly to control LEDs, 7-segment, and LCD display. Used MPLAB XC8 and mLoader.",
@@ -44,7 +59,7 @@ const projects = [
     liveUrl: null,
   },
   {
-    id: 4,
+    id: 5,
     title: "Occupancy Monitoring with TinyML",
     description:
       "Python + TensorFlow system using edge AI to detect office occupancy, dynamically adjust conditions, and optimize energy use. Deployed on Raspberry Pi.",
@@ -56,7 +71,7 @@ const projects = [
     liveUrl: null,
   },
   {
-    id: 5,
+    id: 6,
     title: "VDHL FPGA Sequence Detector",
     description:
       "Designed, simulated, and debugged a sequence detector state machine on a NEXYS FPGA board using VHDL. Included power analysis and Vivado simulation.",
@@ -68,7 +83,7 @@ const projects = [
     liveUrl: null,
   },
   {
-    id: 6,
+    id: 7,
     title: "Raspberry Pi OpenCV Socket Project",
     description:
       "Built a real-time video pipeline using Python, OpenCV, and Raspberry Pi to detect red-dot objects and track motion. Networked with socket programming.",
@@ -81,7 +96,7 @@ const projects = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "MSP4320 Line Following Robot",
     description:
       "Built a Line-Following Robot using the MSP4320.",
@@ -94,7 +109,7 @@ const projects = [
   },
 
   {
-    id: 8,
+    id: 9,
     title: "Photography Front End Static Web Portfolio",
     description:
       "Developed, Designed and Implemented a static Front End website for a photographer to showcase her portfolio, and history.",
@@ -107,13 +122,13 @@ const projects = [
   },
 
   {
-    id: 9,
+    id: 10,
     title: "Automated Inventory Camera Recording System",
     description:
       "Designed and implemented a prototype inventory system using a camera and computer vision to automatically detect, classify, and record items. Utilized Python and OpenCV for image capture and processing, and trained a lightweight neural network for real-time object recognition. Reduced manual entry workload and improved accuracy of inventory logging.",
     image:
-      "/img/.png",
-    technologies: ["Python", "OpenCV", "Raspberry Pi", "Sockets"],
+      "/img/hptm-project.png",
+    technologies: ["Python", "OpenCV", "Webcam"],
     category: "software",
     githubUrl: "",
     liveUrl: null,
@@ -121,20 +136,34 @@ const projects = [
 
   
 {
-    id: 10,
+    id: 11,
     title: "Smart Tool Inventory Management System",
     description:
     "Developed an automated inventory management solution for tracking tools (e.g., screws, hand tools) in manufacturing labs. Integrated ESP8266 D1 Mini microcontrollers and LED indicators for real-time tool status and availability. Combined camera-based object recognition (Python, OpenCV) with IoT connectivity for automated recording and monitoring. System provided instant visual feedback and streamlined tool check-in/check-out, reducing losses and improving operational efficiency.",
     image:
-      "/img/photography-portfolio.png",
-    technologies: ["Python", "OpenCV", "Raspberry Pi", "Sockets"],
-    category: "software",
+      "/img/inventory-led.png",
+    technologies: ["Python", "OpenCV", "ESP32", "LEDs"],
+    category: "hardware",
     githubUrl: "",
     liveUrl: null,
   },
 
-];
+{
+    id: 12,
+    title: "ECG Signal Processing and Classification",
+    description:
+    "Developed a Python-based system for processing and classifying ECG signals using machine learning. Implemented signal filtering, feature extraction, and edge detection to extract time series data from images.",
+    image:
+      "/img/ecg-processing-system.png",
+    technologies: ["Python", "OpenCV", "ESP32", "LEDs"],
+    category: "hardware",
+    githubUrl: "",
+    liveUrl: null,
+  },
 
+
+
+];
 
 const categories = [
   { id: "all", label: "All Projects" },
