@@ -280,27 +280,27 @@ export default function ProjectsSection() {
             </Card>
           ))}
         </div>
-        <Dialog open={!!selectedProject} onOpenChange={(o) => !o && setSelectedProject(null)}>
-          <DialogContent>
-            {selectedProject && (
-              <>
-                <DialogTitle>{selectedProject.title}</DialogTitle>
-                <p className="text-blue-500 mb-4">{selectedProject.description}</p>
-                <DialogFooter className="flex space-x-2">
-                  <Button asChild>
-                    <a href={selectedProject.githubUrl} target="_blank" rel="noopener noreferrer">Source Code</a>
-                  </Button>
-                  {selectedProject.liveUrl && (
-                    <Button variant="secondary" asChild>
-                      <a href={selectedProject.liveUrl} target="_blank" rel="noopener noreferrer">Live Demo</a>
-                    </Button>
-                  )}
-                </DialogFooter>
-              </>
-            )}
-          </DialogContent>
-        </Dialog>
+      <Dialog open={!!selectedProject} onOpenChange={(o) => !o && setSelectedProject(null)}>
+  <DialogContent className="text-blue-500">
+    {selectedProject && (
+      <>
+        <DialogTitle className="text-blue-500">{selectedProject.title}</DialogTitle>
+        <p className="mb-4">{selectedProject.description}</p>
+        <DialogFooter className="flex space-x-2">
+          <Button asChild>
+            <a href={selectedProject.githubUrl} target="_blank" rel="noopener noreferrer">Source Code</a>
+          </Button>
+          {selectedProject.liveUrl && (
+            <Button variant="secondary" asChild>
+              <a href={selectedProject.liveUrl} target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </Button>
+          )}
+        </DialogFooter>
+      </>
+    )}
+  </DialogContent>
+</Dialog>
       </div>
     </section>
-  );
+  );  
 }
