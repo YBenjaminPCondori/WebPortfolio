@@ -70,7 +70,11 @@ export default function Navigation() {
               <button
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className={`border border-blue-200 bg-blue-200 rounded-lg px-3 py-1 text-black transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:scale-105${
+                className={`border border-blue-200 rounded-lg px-3 py-1 transition-all duration-300 ease-in-out hover:scale-105 ${
+                  scrolled
+                    ? "bg-blue-200 text-black hover:bg-black hover:text-white"
+                    : "bg-black text-white hover:bg-blue-200 hover:text-black"
+                }${
                   activeSection === link.href.substring(1) ? " nav-active" : ""
                 }`}
               >
@@ -92,7 +96,11 @@ export default function Navigation() {
                   <button
                     key={link.href}
                     onClick={() => handleNavClick(link.href)}
-                    className={`border border-blue-200 bg-blue-200 rounded-lg px-3 py-2 text-lg text-black transition-all duration-300 ease-in-out text-left hover:bg-black hover:text-white hover:scale-105${
+                    className={`border border-blue-200 rounded-lg px-3 py-2 text-lg transition-all duration-300 ease-in-out text-left hover:scale-105 ${
+                      scrolled
+                        ? "bg-blue-200 text-black hover:bg-black hover:text-white"
+                        : "bg-black text-white hover:bg-blue-200 hover:text-black"
+                    }${
                       activeSection === link.href.substring(1) ? " nav-active" : ""
                     }`}
                   >
