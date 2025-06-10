@@ -60,12 +60,13 @@ export default function Navigation() {
         scrolled ? "bg-blue-200 shadow" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="font-bold -ml-4 sm:-ml-6 lg:-ml-32 text-xl text-slate-800">Y. BENJAMIN PEREZ. ENGINEERING PORTFOLIO</div>
+      <div className="max-w-7xl mx-auto flex justify-between items-center h-16 px-4 sm:px-6 lg:px-8">
+        <div className="font-bold text-xl text-slate-800 flex-shrink-0">
+          Y. BENJAMIN PEREZ. ENGINEERING PORTFOLIO
+        </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8 -mr-4 sm:-mr-6 lg:-mr-16">
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex space-x-8">
             {navLinks.map((link) => (
               <button
                 key={link.href}
@@ -110,7 +111,6 @@ export default function Navigation() {
               </div>
             </SheetContent>
           </Sheet>
-        </div>
       </div>
     </nav>
   );
