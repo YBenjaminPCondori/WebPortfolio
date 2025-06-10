@@ -158,7 +158,7 @@ export default function ExperienceSection() {
                         ))}
                       </div>
 
-                      <Button variant="outline" size="sm" asChild>
+                      <Button variant="primary" size="sm" asChild>
                         <a href={exp.link} target="_blank" rel="noopener noreferrer">Learn More</a>
                       </Button>
                     </CardContent>

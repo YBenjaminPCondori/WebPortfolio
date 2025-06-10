@@ -48,11 +48,11 @@ const projects = [
 
   {
     id: 4,
-    title: "PIC Microcontroller LED/LCD Project",
+    title: "PIC16F LED/LCD Project",
     description:
       "Developed and programmed a PIC16F877A with C and Assembly to control LEDs, 7-segment, and LCD display. Used MPLAB XC8 and mLoader.",
     image:
-      "/img/pic-microcontoller-system.png",
+      "/img/pic-microcontroller-system.png",
     technologies: ["PIC16F877A", "Embedded C", "Assembly", "MPLAB"],
     category: "embedded",
     githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/PIC16F1877-Home-Monitoring-System-Project",
