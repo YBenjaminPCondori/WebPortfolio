@@ -62,10 +62,10 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="font-bold -ml-2 sm:-ml-3 md:-ml-4 text-xl text-slate-800">Y. BENJAMIN PEREZ. ENGINEERING PORTFOLIO</div>
+          <div className="font-bold -ml-4 sm:-ml-6 lg:-ml-8 text-xl text-slate-800">Y. BENJAMIN PEREZ. ENGINEERING PORTFOLIO</div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 -mr-4 sm:-mr-6 lg:-mr-8">
             {navLinks.map((link) => (
               <button
                 key={link.href}
