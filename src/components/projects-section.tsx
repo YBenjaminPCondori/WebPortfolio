@@ -40,7 +40,7 @@ const projects = [
       "/img/supermarket-system.png",
     technologies: ["Java", "Swing", "UML"],
     category: "software",
-    githubUrl: "",
+    githubUrl: "https://www.github.com/YBenjaminPCondori/Software-Projects/tree/main/Supermarket-Management-System",
     liveUrl: null,
   },
 
