@@ -38,7 +38,7 @@ const projects = [
       "Developed ano Implemented a Java Swing app for secure transactions, and a user management system to monitor, check out, and logs.",
     image:
       "/img/supermarket-system.png",
-    echnologies: ["Java", "Swing", "UML"],
+    technologies: ["Java", "Swing", "UML"],
     category: "software",
     githubUrl: "",
     liveUrl: null,
