@@ -65,7 +65,7 @@ export default function Navigation() {
           <div className="font-bold -ml-4 sm:-ml-6 lg:-ml-8 text-xl text-slate-800">Y. BENJAMIN PEREZ. ENGINEERING PORTFOLIO</div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8 -mr-4 sm:-mr-6 lg:-mr-18">
+          <div className="hidden md:flex space-x-8 -mr-4 sm:-mr-6 lg:-mr-16">
             {navLinks.map((link) => (
               <button
                 key={link.href}
