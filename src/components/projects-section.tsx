@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogFooter, DialogTitle } from "@/components/ui/dialog";
 import { ExternalLink, Github } from "lucide-react";
 
-// You can replace the image URLs with real screenshots if you have them
 const projects = [
   {
     id: 1,
@@ -160,6 +159,18 @@ const projects = [
     githubUrl: "",
     liveUrl: null,
   },
+
+  {
+  id: 13,
+  title: "Verilog FSM Pulse Generator",
+  description:
+    "Designed and implemented a finite state machine (FSM) in Verilog to generate configurable digital pulse streams for two outputs (Z1 and Z2) based on a 2-bit selector input. The FSM produces different output patterns depending on the selected input, matching formal specifications for waveform generation. The design was fully verified in simulation, adheres to functional-level Verilog constraints, and avoids behavioral synthesis or auto-generated code.",
+  image: "/img/fsm-pulse-generator.png", 
+  technologies: ["Verilog", "Quartus", "ModelSim", "Digital Logic", "FSM"],
+  category: "embedded",
+  githubUrl: "https://github.com/YBenjaminPCondori/Electronic-Projects/tree/main/FSM-Pulse-Generator",
+  liveUrl: null,
+}
 
 
 
