@@ -195,14 +195,14 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="py-20 bg-black"
+      className="py-20 bg-background"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-500 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-blue-500 mb-4">
             PROJECTS and ACADEMIC WORK
           </h2>
-          <p className="text-xl text-blue-500 max-w-2xl mx-auto">
+          <p className="text-xl text-black dark:text-blue-500 max-w-2xl mx-auto">
             Projects in embedded systems, machine learning, edge AI, microcontrollers, and full-stack software.
           </p>
         </div>
@@ -242,18 +242,18 @@ export default function ProjectsSection() {
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-bold text-blue-500">{project.title}</h3>
+                  <h3 className="text-xl font-bold text-black dark:text-blue-500">{project.title}</h3>
                   <div className="flex space-x-2">
                     <a
                       href={project.githubUrl}
-                      className="text-blue-500 transition-colors"
+                      className="text-black dark:text-blue-500 transition-colors"
                     >
                       <Github className="h-5 w-5" />
                     </a>
                     {project.liveUrl && (
                       <a
                         href={project.liveUrl}
-                        className="text-blue-500 transition-colors"
+                        className="text-black dark:text-blue-500 transition-colors"
                       >
                         <ExternalLink className="h-5 w-5" />
                       </a>
@@ -261,7 +261,7 @@ export default function ProjectsSection() {
                   </div>
                 </div>
 
-                <p className="text-blue-500 mb-4 text-sm leading-relaxed">
+                <p className="text-black dark:text-blue-500 mb-4 text-sm leading-relaxed">
                   {project.description}
                 </p>
 
@@ -281,10 +281,10 @@ export default function ProjectsSection() {
           ))}
         </div>
       <Dialog open={!!selectedProject} onOpenChange={(o) => !o && setSelectedProject(null)}>
-  <DialogContent className="text-blue-500">
+  <DialogContent className="text-black dark:text-blue-500">
     {selectedProject && (
       <>
-        <DialogTitle className="text-blue-500">{selectedProject.title}</DialogTitle>
+        <DialogTitle className="text-black dark:text-blue-500">{selectedProject.title}</DialogTitle>
         <p className="mb-4">{selectedProject.description}</p>
         <DialogFooter className="flex space-x-2">
           <Button asChild>

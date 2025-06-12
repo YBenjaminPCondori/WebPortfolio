@@ -108,12 +108,12 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="py-20 bg-black"
+      className="py-20 bg-background"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-500">WORK HISTORY</h2>
-          <p className="text-xl text-blue-500 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-blue-500">WORK HISTORY</h2>
+          <p className="text-xl text-black dark:text-blue-500 max-w-2xl mx-auto">
             List of my work experiences, showcasing my skills in engineering, design, and customer service.
             I have worked in various roles, from engineering internships to customer service positions, each contributing to my professional growth.
           </p>
@@ -132,15 +132,15 @@ export default function ExperienceSection() {
                 ref={(el) => (itemRefs.current[index] = el)}
                 className={`relative flex items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''} ${visibleItems.includes(index) ? 'reveal-show' : 'reveal-hidden'}`}
               >
-                <div className={`absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 shadow-lg bg-sky-200 ${visibleItems.includes(index) ? 'grow' : 'scale-50'}`}></div>
+                <div className={`absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 shadow-lg bg-sky-200 dark:bg-slate-700 ${visibleItems.includes(index) ? 'grow' : 'scale-50'}`}></div>
 
                 <div className={`ml-16 md:ml-0 md:w-1/2 ${index % 2 === 1 ? 'md:pl-12' : 'md:pr-12'}`}>
-                  <Card className="bg-sky-100 hover:shadow-xl border border-sky-200 transition-shadow">
+                  <Card className="bg-sky-100 dark:bg-slate-800 hover:shadow-xl border border-sky-200 dark:border-slate-700 transition-shadow">
                     <CardContent className="p-6">
                       <div className="flex items-start justify-between mb-4">
                         <div>
-                          <h3 className="text-xl font-bold text-blue-500">{exp.title}</h3>
-                          <p className="font-medium text-blue-500">
+                          <h3 className="text-xl font-bold text-black dark:text-blue-500">{exp.title}</h3>
+                          <p className="font-medium text-black dark:text-blue-500">
                             {exp.company}
                           </p>
                         </div>
@@ -149,7 +149,7 @@ export default function ExperienceSection() {
                         </Badge>
                       </div>
 
-                      <p className="text-blue-500 mb-4">{exp.description}</p>
+                      <p className="text-black dark:text-blue-500 mb-4">{exp.description}</p>
 
                       <div className="flex flex-wrap gap-2 mb-4">
                         {exp.technologies.map((tech) => (

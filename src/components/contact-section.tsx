@@ -43,12 +43,12 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-20 bg-black"
+      className="py-20 bg-background"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-500 mb-4">LET'S CONNECT</h2>
-          <p className="text-xl text-blue-500">
+          <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-blue-500 mb-4">LET'S CONNECT</h2>
+          <p className="text-xl text-black dark:text-blue-500">
             Let's connect! Whether you have a question, want to collaborate, or just say hi, feel free to reach out through any of the methods below.
           </p>
         </div>
@@ -57,13 +57,13 @@ export default function ContactSection() {
           {contactMethods.map((method, index) => {
             const IconComponent = method.icon;
             return (
-              <Card key={index} className="text-center hover:shadow-xl transition-shadow">
+              <Card key={index} className="text-center hover:shadow-xl transition-shadow bg-sky-100 dark:bg-slate-800">
                 <CardContent className="p-6">
                   <div className="bg-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="h-6 w-6 text-[lightblue]" />
                   </div>
-              <h3 className="font-bold text-blue-500 mb-2">{method.title}</h3>
-                  <p className="text-blue-500 mb-4">{method.value}</p>
+              <h3 className="font-bold text-black dark:text-blue-500 mb-2">{method.title}</h3>
+                  <p className="text-black dark:text-blue-500 mb-4">{method.value}</p>
                   <Badge variant="primary" className="cursor-pointer inline-block">
                     <a
                       href={method.link}
@@ -82,7 +82,7 @@ export default function ContactSection() {
         <div className="text-center mt-12">
           <Button
             onClick={handleDownloadResume}
-            className="bg-sky-200 text-blue-500 px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
+            className="bg-sky-200 text-black dark:text-blue-500 px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
           >
             <Download className="mr-2 h-5 w-5" />
             Download Full Resume
