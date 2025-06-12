@@ -24,8 +24,8 @@ const certifications = [
 ];
 
 const achievements = [
-  { icon: Trophy, title: "Data Science Society", subtitle: "Co-Founder" },
-  { icon: Users, title: "Brunel Engineering Society", subtitle: "Member since 2023" },
+  { icon: Trophy, title: "Brunel Proffesional Mentoring Programme (Goldman Sachs)", subtitle: "2025" },
+  { icon: Users, title: "Brunel Engineering Society", subtitle: "2023/24/25" },
   { icon: Award, title: "Brunel+ Silver Award", subtitle: "Certificate of Extracurricular Events" }
 ];
 
@@ -141,7 +141,7 @@ export default function EducationSection() {
                   return (
                     <div key={index} className="text-center">
                       <div className="bg-sky-200 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <IconComponent className="h-8 w-8 text-blue-500" />
+                        <IconComponent className="h-8 w-8 text-blue-100" />
                       </div>
                       <h4 className="font-semibold text-blue-500 mb-1">{achievement.title}</h4>
                       <p className="text-sm text-blue-500">{achievement.subtitle}</p>
