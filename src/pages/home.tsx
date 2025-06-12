@@ -18,7 +18,7 @@ export default function Home() {
       </main>
       <footer className="bg-background text-black dark:text-blue-500 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-          <p className="text-black dark:text-blue-500">&copy; Website Developed by (Owner) Y. Benjamin Perez C. ©</p>
+          <p className="text-black dark:text-blue-500">&copy; Website Developed by (Owner) <b>Y. Benjamin Perez C. ©</b></p>
         </div>
       </footer>
     </div>
