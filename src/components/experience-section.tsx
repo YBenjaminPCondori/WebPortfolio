@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Building2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const experiences = [
@@ -8,9 +9,13 @@ const experiences = [
     id: 1,
     title: "PDC Careers Ambassador",
     company: "Brunel University London",
+    logo: Building2,
     link: "https://www.brunel.ac.uk/pdc/Brunel-Careers-Ambassador-Scheme",
     period: "Nov 2023 – July 2025",
-    description: "Supported Brunel’s Professional Career Development Centre (PDC) by assisting at university careers events, distributing materials, and engaging with students and staff.",
+    points: [
+      "Improved event engagement by assisting career fairs",
+      "Distributed materials and guided students and staff",
+    ],
     technologies: ["Event Support", "Communication", "Teamwork"],
     current: false,
   },
@@ -18,9 +23,13 @@ const experiences = [
     id: 2,
     title: "Systems Design Engineer Intern",
     company: "Brunel University London",
+    logo: Building2,
     link: "https://www.brunel.ac.uk/research/Groups/Heat-Pipe-and-Thermal-Management/home",
     period: "Feb 2024 – July 2024",
-    description: "Contributing to systems and product design, technical reporting, and CAD/CAM tasks. Focused on sustainable engineering solutions and water management.",
+    points: [
+      "Automated CAD workflows with SolidWorks",
+      "Produced technical reports for water management projects",
+    ],
     technologies: ["CAD", "Technical Reporting", "Sustainability"],
     current: false,
   },
@@ -28,9 +37,13 @@ const experiences = [
     id: 3,
     title: "Junior Assistant Plumber",
     company: "JP Plumbing and Heating",
+    logo: Building2,
     link: "#",
     period: "May 2023 – July 2023",
-    description: "Assisted in plumbing installations and repairs, sourced parts, and provided on-site support for commercial and residential clients.",
+    points: [
+      "Supported pipe installations and repairs",
+      "Sourced parts and managed on-site logistics",
+    ],
     technologies: ["Pipefitting", "Customer Service", "Problem Solving"],
     current: false,
   },
@@ -38,9 +51,13 @@ const experiences = [
     id: 4,
     title: "Sales Team Member / Stock Room Operative",
     company: "Clarks",
+    logo: Building2,
     link: "https://www.clarks.com",
     period: "May 2022 – July 2022",
-    description: "Provided retail support, assisted customers, managed stock, and maintained store organization.",
+    points: [
+      "Boosted sales by providing tailored customer service",
+      "Organised stock room for fast order fulfilment",
+    ],
     technologies: ["Retail", "Sales", "Stock Management"],
     current: false,
   },
@@ -48,9 +65,13 @@ const experiences = [
     id: 5,
     title: "Cleaning Operative",
     company: "Nviro Limited",
+    logo: Building2,
     link: "https://www.nviro.co.uk",
     period: "Jan 2021 – Apr 2022",
-    description: "Maintained cleanliness and hygiene standards in university buildings, ensuring a safe environment for staff and students.",
+    points: [
+      "Ensured university facilities met strict hygiene standards",
+      "Coordinated with team to cover large campus areas",
+    ],
     technologies: ["Health & Safety", "Attention to Detail"],
     current: false,
   },
@@ -58,9 +79,13 @@ const experiences = [
     id: 6,
     title: "Junior WordPress Developer",
     company: "Complex Creative",
+    logo: Building2,
     link: "https://www.wearecomplexcreative.com",
     period: "Jul 2021 – Aug 2021",
-    description: "Developed and maintained WordPress websites, collaborated with designers, and implemented new web features.",
+    points: [
+      "Built custom themes and plugins for clients",
+      "Collaborated with designers to launch new features",
+    ],
     technologies: ["WordPress", "Web Design", "CMS"],
     current: false,
   },
@@ -68,9 +93,13 @@ const experiences = [
     id: 7,
     title: "Food Bank Volunteer",
     company: "Masjid Ul Ibrahim",
+    logo: Building2,
     link: "https://www.brunel.ac.uk/research/Groups/Heat-Pipe-and-Thermal-Management/home",
     period: "Feb 2021 – Aug 2021",
-    description: "Supported food distribution to local community members during the pandemic, offering direct client support.",
+    points: [
+      "Distributed food parcels during pandemic lockdowns",
+      "Provided direct client support and logistics",
+    ],
     technologies: ["Community Support", "Teamwork"],
     current: false,
   },
@@ -78,9 +107,13 @@ const experiences = [
     id: 8,
     title: "IT Teaching Assistant",
     company: "Bonny Downs Community Association",
+    logo: Building2,
     link: "https://www.bonnydowns.org",
     period: "Dec 2020 – Jan 2021",
-    description: "Assisted teaching computer literacy to children and adults, providing technical support and guidance.",
+    points: [
+      "Taught basic computer skills to children and adults",
+      "Provided one-on-one technical support",
+    ],
     technologies: ["Teaching", "Technical Support"],
     current: false,
   },
@@ -108,7 +141,7 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="py-20 bg-background"
+      className="py-20 bg-gradient-light"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -140,7 +173,8 @@ export default function ExperienceSection() {
                       <div className="flex items-start justify-between mb-4">
                         <div>
                           <h3 className="text-xl font-bold text-black dark:text-blue-500">{exp.title}</h3>
-                          <p className="font-medium text-black dark:text-blue-500">
+                          <p className="font-medium text-black dark:text-blue-500 flex items-center">
+                            {(() => { const Icon = exp.logo; return <Icon className="h-4 w-4 mr-1 text-slate-400" />; })()}
                             {exp.company}
                           </p>
                         </div>
@@ -149,7 +183,11 @@ export default function ExperienceSection() {
                         </Badge>
                       </div>
 
-                      <p className="text-black dark:text-blue-500 mb-4">{exp.description}</p>
+                      <ul className="list-disc list-inside text-black dark:text-blue-500 mb-4 space-y-1">
+                        {exp.points.map((point) => (
+                          <li key={point}>{point}</li>
+                        ))}
+                      </ul>
 
                       <div className="flex flex-wrap gap-2 mb-4">
                         {exp.technologies.map((tech) => (
