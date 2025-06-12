@@ -25,7 +25,7 @@ export default function HeroSection() {
   return (
    <section
   id="home"
-  className="pt-16 min-h-screen flex items-center bg-black">
+  className="pt-16 min-h-screen flex items-center bg-background">
   <div className="absolute inset-0 pointer-events-none overflow-hidden">
     <span className="shape w-24 h-24 rounded-full bg-teal-300 top-10 left-10 animate-shape1"></span>
     <span className="shape w-16 h-16 bg-teal-300 top-1/2 right-20 rotate-45 animate-shape2"></span>
@@ -36,11 +36,11 @@ export default function HeroSection() {
     <div className="grid lg:grid-cols-1 gap-12 items-start">
       <div className="space-y-8 animate-slide-up w-full text-left ml-10 sm:ml-14 md:ml-20">
         <div className="space-y-4">
-          <h1 className="text-4xl md:text-6xl font-bold text-blue-500 leading-tight text-left">
+          <h1 className="text-4xl md:text-6xl font-bold text-black dark:text-blue-500 leading-tight text-left">
             Computer
-            <span className="text-blue-500 block">Engineering</span>
+            <span className="block text-black dark:text-blue-500">Engineering</span>
           </h1>
-          <p className="text-xl text-blue-500 leading-relaxed max-w-lg">
+          <p className="text-xl text-black dark:text-blue-500 leading-relaxed max-w-lg">
             Hi, I'm Y. Benjamin Perez C., a Computer Systems Engineering Graduate at Brunel University of London.
             <br />
           </p>

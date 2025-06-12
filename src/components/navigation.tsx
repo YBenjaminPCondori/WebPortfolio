@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import { Switch } from "@/components/ui/switch";
+import { useTheme } from "@/hooks/use-theme";
 
 const navLinks = [
   { href: "#home", label: "HOME" },
@@ -15,6 +17,7 @@ export default function Navigation() {
   const [activeSection, setActiveSection] = useState("home");
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,52 +67,58 @@ export default function Navigation() {
           PEREZ. C
         </div>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-8">
-          {navLinks.map((link) => (
-            <button
-              key={link.href}
-              onClick={() => handleNavClick(link.href)}
-              className={`border border-blue-200 rounded-lg px-3 py-1 transition-all duration-300 ease-in-out hover:scale-105 ${
-                activeSection === link.href.substring(1)
-                  ? "text-blue-500 font-bold border-blue-500"
-                  : scrolled
-                  ? "bg-blue-200 text-black hover:bg-black hover:text-white"
-                  : "bg-black text-white hover:bg-blue-200 hover:text-black"
-              }`}
-            >
-              {link.label}
-            </button>
-          ))}
-        </div>
+        <div className="flex items-center space-x-4">
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex space-x-8">
+            {navLinks.map((link) => (
+              <button
+                key={link.href}
+                onClick={() => handleNavClick(link.href)}
+                className={`border border-blue-200 rounded-lg px-3 py-1 transition-all duration-300 ease-in-out hover:scale-105 ${
+                  activeSection === link.href.substring(1)
+                    ? "text-blue-500 font-bold border-blue-500"
+                    : scrolled
+                    ? "bg-blue-200 text-black dark:bg-gray-900 dark:text-white hover:bg-black hover:text-white dark:hover:bg-blue-200 dark:hover:text-black"
+                    : "bg-black text-white dark:bg-gray-900 dark:text-white hover:bg-blue-200 hover:text-black"
+                }`}
+              >
+                {link.label}
+              </button>
+            ))}
+          </div>
+          <Switch checked={theme === 'dark'} onCheckedChange={toggleTheme} />
 
-        {/* Mobile Navigation */}
-        <Sheet open={isOpen} onOpenChange={setIsOpen}>
-          <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="md:hidden">
-              <Menu className="h-5 w-5" />
-            </Button>
-          </SheetTrigger>
-          <SheetContent>
-            <div className="flex flex-col space-y-6 mt-8">
-              {navLinks.map((link) => (
-                <button
-                  key={link.href}
-                  onClick={() => handleNavClick(link.href)}
-                  className={`border border-blue-200 rounded-lg px-3 py-2 text-lg transition-all duration-300 ease-in-out text-left hover:scale-105 ${
-                    activeSection === link.href.substring(1)
-                      ? "text-blue-500 font-bold border-blue-500"
-                      : scrolled
-                      ? "bg-blue-200 text-black hover:bg-black hover:text-white"
-                      : "bg-black text-white hover:bg-blue-200 hover:text-black"
-                  }`}
-                >
-                  {link.label}
-                </button>
-              ))}
-            </div>
-          </SheetContent>
-        </Sheet>
+          {/* Mobile Navigation */}
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="md:hidden">
+                <Menu className="h-5 w-5" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent>
+              <div className="flex flex-col space-y-6 mt-8">
+                {navLinks.map((link) => (
+                  <button
+                    key={link.href}
+                    onClick={() => handleNavClick(link.href)}
+                    className={`border border-blue-200 rounded-lg px-3 py-2 text-lg transition-all duration-300 ease-in-out text-left hover:scale-105 ${
+                      activeSection === link.href.substring(1)
+                        ? "text-blue-500 font-bold border-blue-500"
+                        : scrolled
+                        ? "bg-blue-200 text-black dark:bg-gray-900 dark:text-white hover:bg-black hover:text-white dark:hover:bg-blue-200 dark:hover:text-black"
+                        : "bg-black text-white dark:bg-gray-900 dark:text-white hover:bg-blue-200 hover:text-black"
+                    }`}
+                  >
+                    {link.label}
+                  </button>
+                ))}
+                <div className="pt-4">
+                  <Switch checked={theme === 'dark'} onCheckedChange={toggleTheme} />
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </nav>
   );
