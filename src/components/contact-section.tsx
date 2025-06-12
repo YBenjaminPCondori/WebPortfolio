@@ -47,7 +47,7 @@ export default function ContactSection() {
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-500 mb-4">Wanna Reach Out?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-500 mb-4">LET'S CONNECT</h2>
           <p className="text-xl text-blue-500">
             Let's connect! Whether you have a question, want to collaborate, or just say hi, feel free to reach out through any of the methods below.
           </p>

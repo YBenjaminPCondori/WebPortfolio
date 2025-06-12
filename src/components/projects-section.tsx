@@ -120,45 +120,45 @@ const projects = [
     liveUrl: null,
   },
 
-  //{
-  //  id: 10,
-  //  title: "Automated Inventory Camera Recording System",
-  //  description:
-  //    "Designed and implemented a prototype inventory system using a camera and computer vision to automatically detect, classify, and record items. Utilized Python and OpenCV for image capture and processing, and trained a lightweight neural network for real-time object recognition. Reduced manual entry workload and improved accuracy of inventory logging.",
-  //  image:
-  //    "/img/hptm-project.png",
-  //  technologies: ["Python", "OpenCV", "Webcam"],
-  //  category: "software",
-  //  githubUrl: "",
-  //  liveUrl: null,
-  //},
+  {
+    id: 10,
+    title: "Automated Inventory Camera Recording System",
+    description:
+      "Designed and implemented a prototype inventory system using a camera and computer vision to automatically detect, classify, and record items. Utilized Python and OpenCV for image capture and processing, and trained a lightweight neural network for real-time object recognition. Reduced manual entry workload and improved accuracy of inventory logging.",
+    image:
+      "/img/hptm-project.png",
+    technologies: ["Python", "OpenCV", "Webcam"],
+    category: "software",
+    githubUrl: "",
+    liveUrl: null,
+  },
 
   
-//{
-  //  id: 11,
-  //  title: "Smart Tool Inventory Management System",
-  //  description:
-  //  "Developed an automated inventory management solution for tracking tools (e.g., screws, hand tools) in manufacturing labs. Integrated ESP8266 D1 Mini microcontrollers and LED indicators for real-time tool status and availability. Combined camera-based object recognition (Python, OpenCV) with IoT connectivity for automated recording and monitoring. System provided instant visual feedback and streamlined tool check-in/check-out, reducing losses and improving operational efficiency.",
-  //  image:
-  //    "/img/inventory-led.png",
-  //  technologies: ["Python", "OpenCV", "ESP32", "LEDs"],
-  //  category: "embedded",
-  //  githubUrl: "",
-  //  liveUrl: null,
-  //},
+  {
+    id: 11,
+    title: "Smart Tool Inventory Management System",
+    description:
+    "Developed an automated inventory management solution for tracking tools (e.g., screws, hand tools) in manufacturing labs. Integrated ESP8266 D1 Mini microcontrollers and LED indicators for real-time tool status and availability. Combined camera-based object recognition (Python, OpenCV) with IoT connectivity for automated recording and monitoring. System provided instant visual feedback and streamlined tool check-in/check-out, reducing losses and improving operational efficiency.",
+    image:
+      "/img/inventory-led.png",
+    technologies: ["Python", "OpenCV", "ESP32", "LEDs"],
+    category: "embedded",
+    githubUrl: "",
+    liveUrl: null,
+  },
 
-//{
-  //  id: 12,
-  //  title: "ECG Signal Processing and Classification",
-  //  description:
-  //  "Developed a Python-based system for processing and classifying ECG signals using machine learning. Implemented signal filtering, feature extraction, and edge detection to extract time series data from images.",
-  //  image:
-  //    "/img/ecg-processing-system.png",
-  //  technologies: ["Python", "OpenCV"],
-  //  category: "ml",
-  //  githubUrl: "",
-  //  liveUrl: null,
-  //}, 
+{
+    id: 12,
+    title: "ECG Signal Processing and Classification",
+    description:
+    "Developed a Python-based system for processing and classifying ECG signals using machine learning. Implemented signal filtering, feature extraction, and edge detection to extract time series data from images.",
+    image:
+      "/img/ecg-processing-system.png",
+    technologies: ["Python", "OpenCV"],
+    category: "ml",
+    githubUrl: "",
+    liveUrl: null,
+  }, 
 
   {
   id: 13,
@@ -200,7 +200,7 @@ export default function ProjectsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-500 mb-4">
-            Projects and Academic Work
+            PROJECTS and ACADEMIC WORK
           </h2>
           <p className="text-xl text-blue-500 max-w-2xl mx-auto">
             Projects in embedded systems, machine learning, edge AI, microcontrollers, and full-stack software.

@@ -37,7 +37,7 @@ export default function EducationSection() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-500 mb-4">Education</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-500 mb-4">EDUCATION and CERTIFICATIONS</h2>
           <p className="text-xl text-blue-500 max-w-2xl mx-auto">
             Building a strong foundation in computer systems engineering and emerging technologies.
           </p>
