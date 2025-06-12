@@ -141,8 +141,8 @@ export default function EducationSection() {
                   const IconComponent = achievement.icon;
                   return (
                     <div key={index} className="text-center">
-                      <div className="bg-sky-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <IconComponent className="h-8 w-8 text-blue-100" />
+                      <div className="bg-yellow-200 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <IconComponent className="h-8 w-8 text-blue-800" />
                       </div>
                       <h4 className="font-semibold text-blue-500 mb-1">{achievement.title}</h4>
                       <p className="text-sm text-blue-500">{achievement.subtitle}</p>
