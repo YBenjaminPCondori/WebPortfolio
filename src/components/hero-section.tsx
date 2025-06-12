@@ -4,16 +4,14 @@ import { Download, ExternalLink } from "lucide-react";
 import {
   SiLinkedin,
   SiGithub,
-  SiJava,
   SiC,
   SiCplusplus,
   SiPython,
-  SiVhdl,
-  SiVerilog,
   SiHtml5,
   SiCss3,
   SiReact,
 } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 
 export default function HeroSection() {
   const handleDownloadResume = () => {
@@ -59,12 +57,10 @@ export default function HeroSection() {
         </div>
 
         <div className="flex flex-wrap gap-4 text-[lightblue] text-3xl">
-          <SiJava />
+          <FaJava />
           <SiC />
           <SiCplusplus />
           <SiPython />
-          <SiVhdl />
-          <SiVerilog />
           <SiHtml5 />
           <SiCss3 />
           <SiReact />
