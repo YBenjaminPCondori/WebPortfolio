@@ -59,7 +59,7 @@ export default function ContactSection() {
             return (
               <Card key={index} className="text-center hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
-                  <div className="bg-sky-200 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="bg-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="h-6 w-6 text-[lightblue]" />
                   </div>
               <h3 className="font-bold text-blue-500 mb-2">{method.title}</h3>
