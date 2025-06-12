@@ -9,8 +9,9 @@
   </head>
   <body>
     <script>
-      const theme = localStorage.getItem('theme') || 'dark';
-      if (theme === 'dark') document.body.classList.add('dark');
+      const fallbackTheme = 'dark'
+      const theme = localStorage.getItem('theme') || fallbackTheme
+      if (theme === 'dark') document.body.classList.add('dark')
     </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

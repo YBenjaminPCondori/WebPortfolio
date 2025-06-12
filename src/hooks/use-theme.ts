@@ -3,11 +3,13 @@ import { useEffect, useState } from "react";
 export type Theme = "light" | "dark";
 
 export function useTheme() {
+  const fallbackTheme: Theme = "dark";
   const [theme, setTheme] = useState<Theme>(() => {
     if (typeof window !== "undefined") {
-      return (localStorage.getItem("theme") as Theme) || "dark";
+      const saved = localStorage.getItem("theme") as Theme | null;
+      return saved ?? fallbackTheme;
     }
-    return "dark";
+    return fallbackTheme;
   });
 
   useEffect(() => {
