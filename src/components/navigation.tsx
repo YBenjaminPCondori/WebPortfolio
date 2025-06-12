@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
@@ -11,6 +12,7 @@ const navLinks = [
   { href: "#projects", label: "PROJECTS" },
   { href: "#education", label: "EDUCATION" },
   { href: "#contact", label: "CONTACT" },
+  { href: "/docs", label: "API Docs" },
 ];
 
 export default function Navigation() {
@@ -18,12 +20,15 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 0);
 
-      const sections = navLinks.map(link => link.href.substring(1));
+      const sections = navLinks
+        .filter((link) => link.href.startsWith("#"))
+        .map((link) => link.href.substring(1));
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -46,10 +51,14 @@ export default function Navigation() {
   }, []);
 
   const handleNavClick = (href: string) => {
-    const targetId = href.substring(1);
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    if (href.startsWith("#")) {
+      const targetId = href.substring(1);
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      navigate(href);
     }
     setIsOpen(false);
   };
@@ -75,7 +84,7 @@ export default function Navigation() {
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
                 className={`border border-blue-200 rounded-lg px-3 py-1 transition-all duration-300 ease-in-out hover:scale-105 ${
-                  activeSection === link.href.substring(1)
+                  link.href.startsWith('#') && activeSection === link.href.substring(1)
                     ? "text-blue-500 font-bold border-blue-500"
                     : scrolled
                     ? "bg-blue-200 text-black dark:bg-gray-900 dark:text-white hover:bg-black hover:text-white dark:hover:bg-blue-200 dark:hover:text-black"
@@ -102,7 +111,7 @@ export default function Navigation() {
                     key={link.href}
                     onClick={() => handleNavClick(link.href)}
                     className={`border border-blue-200 rounded-lg px-3 py-2 text-lg transition-all duration-300 ease-in-out text-left hover:scale-105 ${
-                      activeSection === link.href.substring(1)
+                      link.href.startsWith('#') && activeSection === link.href.substring(1)
                         ? "text-blue-500 font-bold border-blue-500"
                         : scrolled
                         ? "bg-blue-200 text-black dark:bg-gray-900 dark:text-white hover:bg-black hover:text-white dark:hover:bg-blue-200 dark:hover:text-black"
