@@ -4,7 +4,6 @@ import { Download, ExternalLink } from "lucide-react";
 import {
   SiLinkedin,
   SiGithub,
-  SiJava,
   SiC,
   SiCplusplus,
   SiPython,
