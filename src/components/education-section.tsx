@@ -35,7 +35,8 @@ export default function EducationSection() {
   return (
     <section
       id="education"
-      className="py-20 bg-gradient-light"
+      className="py-20 bg-gradient-light dark:bg-gradient-dark"
+
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">

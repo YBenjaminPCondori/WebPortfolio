@@ -45,7 +45,8 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-20 bg-gradient-light"
+      className="py-20 bg-gradient-light dark:bg-gradient-dark"
+
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">

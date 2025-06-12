@@ -35,7 +35,7 @@ export default function HeroSection() {
   return (
    <section
   id="home"
-  className="pt-16 min-h-screen flex items-center bg-gradient-light">
+  className="pt-16 min-h-screen flex items-center bg-gradient-light dark:bg-gradient-dark">
   <div className="absolute inset-0 pointer-events-none overflow-hidden">
     <span className="shape w-24 h-24 rounded-full bg-teal-300 top-10 left-10 animate-shape1"></span>
     <span className="shape w-16 h-16 bg-teal-300 top-1/2 right-20 rotate-45 animate-shape2"></span>

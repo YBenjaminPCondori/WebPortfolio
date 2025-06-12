@@ -204,6 +204,10 @@
   background: linear-gradient(to bottom, white, #e0f2fe);
 }
 
+.bg-gradient-dark {
+  background: linear-gradient(to bottom, #0f172a, #1e293b);
+}
+
 /* Timeline styles */
 .timeline-line {
   background: #bae6fd;
