@@ -42,7 +42,6 @@ export default function HeroSection() {
           </h1>
           <p className="text-xl text-blue-500 leading-relaxed max-w-lg">
             Hi, I'm Y. Benjamin Perez C., a Computer Systems Engineering Graduate at Brunel University of London.
-            I specialize in software development, embedded systems, and machine learning. My passion lies in creating innovative solutions that bridge the gap between hardware and software.
             <br />
           </p>
         </div>
