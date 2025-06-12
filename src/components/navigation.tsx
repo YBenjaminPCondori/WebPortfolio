@@ -79,7 +79,7 @@ export default function Navigation() {
                     ? "text-blue-500 font-bold border-blue-500"
                     : scrolled
                     ? "bg-blue-200 text-black dark:bg-gray-900 dark:text-white hover:bg-black hover:text-white dark:hover:bg-blue-200 dark:hover:text-black"
-                    : "bg-black text-white dark:bg-gray-900 dark:text-white hover:bg-blue-200 hover:text-black"
+                    : "bg-transparent text-black dark:bg-gray-900 dark:text-white hover:bg-blue-200 hover:text-black"
                 }`}
               >
                 {link.label}
@@ -106,7 +106,7 @@ export default function Navigation() {
                         ? "text-blue-500 font-bold border-blue-500"
                         : scrolled
                         ? "bg-blue-200 text-black dark:bg-gray-900 dark:text-white hover:bg-black hover:text-white dark:hover:bg-blue-200 dark:hover:text-black"
-                        : "bg-black text-white dark:bg-gray-900 dark:text-white hover:bg-blue-200 hover:text-black"
+                        : "bg-transparent text-black dark:bg-gray-900 dark:text-white hover:bg-blue-200 hover:text-black"
                     }`}
                   >
                     {link.label}

@@ -231,7 +231,7 @@ export default function ProjectsSection() {
             <Card
               key={project.id}
               onClick={() => setSelectedProject(project)}
-              className="bg-sky-100 border border-sky-200 overflow-hidden hover:shadow-xl transition-all duration-300 project-card cursor-pointer"
+              className="bg-sky-100 dark:bg-slate-800 border border-sky-200 dark:border-slate-700 overflow-hidden hover:shadow-xl transition-all duration-300 project-card cursor-pointer"
             >
               <div className="relative">
                 <img
