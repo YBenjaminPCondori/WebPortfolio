@@ -41,7 +41,9 @@ export default function HeroSection() {
             <span className="text-blue-500 block">Engineering</span>
           </h1>
           <p className="text-xl text-blue-500 leading-relaxed max-w-lg">
-            Passionate about building innovative solutions at the intersection of software, hardware, and artificial intelligence.
+            Hi, I'm Y. Benjamin Perez C., a Computer Systems Engineering Graduate at Brunel University of London.
+            I specialize in software development, embedded systems, and machine learning. My passion lies in creating innovative solutions that bridge the gap between hardware and software.
+            <br />
           </p>
         </div>
 
