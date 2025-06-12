@@ -61,8 +61,6 @@ export default function HeroSection() {
           <SiC />
           <SiCplusplus />
           <SiPython />
-          //<SiVhdl />
-          //<SiVerilog />
           <SiHtml5 />
           <SiCss3 />
           <SiReact />
