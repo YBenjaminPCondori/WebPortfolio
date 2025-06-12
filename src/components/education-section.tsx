@@ -39,7 +39,8 @@ export default function EducationSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-500 mb-4">EDUCATION and CERTIFICATIONS</h2>
           <p className="text-xl text-blue-500 max-w-2xl mx-auto">
-            Building a strong foundation in computer systems engineering and emerging technologies.
+            My educational background includes a Bachelor of Engineering in Computer Systems Engineering from Brunel University London, with expected graduation in July 2025. I have also completed various certifications and participated in extracurricular activities that enhance my skills and professional development.
+            <br />
           </p>
         </div>
 
