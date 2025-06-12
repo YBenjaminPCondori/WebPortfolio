@@ -1,17 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Download, ExternalLink } from "lucide-react";
-import {
-  SiLinkedin,
-  SiGithub,
-  SiC,
-  SiCplusplus,
-  SiPython,
-  SiHtml5,
-  SiCss3,
-  SiReact,
-} from "react-icons/si";
-import { FaJava } from "react-icons/fa";
+import { SiLinkedin, SiGithub } from "react-icons/si";
 
 export default function HeroSection() {
   const handleDownloadResume = () => {
@@ -35,7 +25,7 @@ export default function HeroSection() {
   return (
    <section
   id="home"
-  className="pt-16 min-h-screen flex items-center bg-gradient-light dark:bg-gradient-dark">
+  className="pt-16 min-h-screen flex items-center bg-background">
   <div className="absolute inset-0 pointer-events-none overflow-hidden">
     <span className="shape w-24 h-24 rounded-full bg-teal-300 top-10 left-10 animate-shape1"></span>
     <span className="shape w-16 h-16 bg-teal-300 top-1/2 right-20 rotate-45 animate-shape2"></span>
@@ -56,14 +46,16 @@ export default function HeroSection() {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-4 text-[lightblue] text-3xl">
-          <FaJava />
-          <SiC />
-          <SiCplusplus />
-          <SiPython />
-          <SiHtml5 />
-          <SiCss3 />
-          <SiReact />
+        <div className="flex flex-wrap gap-3">
+          <Badge variant="primary" className="px-4 py-2 text-sm font-medium">
+            Software Development/Engineering
+          </Badge>
+          <Badge variant="primary" className="px-4 py-2 text-sm font-medium">
+            Embedded/Electronics Systems
+          </Badge>
+          <Badge variant="primary" className="px-4 py-2 text-sm font-medium">
+            Machine Learning/Generative-AI
+          </Badge>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4">

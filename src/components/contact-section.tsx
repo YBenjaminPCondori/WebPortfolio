@@ -1,8 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Download, Mail } from "lucide-react";
 import { SiLinkedin, SiGithub } from "react-icons/si";
 
@@ -45,8 +43,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-20 bg-gradient-light dark:bg-gradient-dark"
-
+      className="py-20 bg-background"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -55,20 +52,6 @@ export default function ContactSection() {
             Let's connect! Whether you have a question, want to collaborate, or just say hi, feel free to reach out through any of the methods below.
           </p>
         </div>
-
-        <form
-          action="mailto:y.benjamin@ybenpc.com"
-          method="post"
-          encType="text/plain"
-          className="space-y-4 mb-12"
-        >
-          <div className="grid md:grid-cols-2 gap-4">
-            <Input name="name" placeholder="Name" required />
-            <Input type="email" name="email" placeholder="Email" required />
-          </div>
-          <Textarea name="message" placeholder="Message" rows={4} required />
-          <Button type="submit">Send Message</Button>
-        </form>
 
         <div className="grid md:grid-cols-3 gap-8">
           {contactMethods.map((method, index) => {
@@ -81,11 +64,14 @@ export default function ContactSection() {
                   </div>
               <h3 className="font-bold text-black dark:text-blue-500 mb-2">{method.title}</h3>
                   <p className="text-black dark:text-blue-500 mb-4">{method.value}</p>
-                  <Button variant="secondary" size="sm" asChild>
-                    <a href={method.link} className="flex items-center space-x-1">
+                  <Badge variant="primary" className="cursor-pointer inline-block">
+                    <a
+                      href={method.link}
+                      className="text-white hover:text-white"
+                    >
                       {method.action}
                     </a>
-                  </Button>
+                  </Badge>
                 </CardContent>
               </Card>
             );

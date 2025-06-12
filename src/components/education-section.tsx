@@ -1,7 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Award, Users, Trophy } from "lucide-react";
-import { SiHtml5, SiPython, SiGoogle } from "react-icons/si";
 
 const coursework = [
   "Digital Systems Design",
@@ -10,8 +9,7 @@ const coursework = [
   "Computer Architecture",
   "Quality Engineering and Management",
   "Autonomous Systems",
-  "Advanced Computing",
-  "Final year project: Embedded Edge AI for Smart Buildings"
+  "Advanced Computing"
 ];
 
 const skills = {
@@ -20,9 +18,9 @@ const skills = {
 };
 
 const certifications = [
-  { name: "LearntoCode - Front End Fundamentals", year: "2023", icon: SiHtml5 },
-  { name: "Data Camp - ML Fundamentals", year: "2025", icon: SiPython },
-  { name: "Google AI - Skills certification", year: "2025", icon: SiGoogle }
+  { name: "LearntoCode - Front End Fundamentals", year: "2023" },
+  { name: "Data Camp - ML Fundamentals", year: "2025" },
+  { name: "Google AI - Skills certification", year: "2025" }
 ];
 
 const achievements = [
@@ -35,8 +33,7 @@ export default function EducationSection() {
   return (
     <section
       id="education"
-      className="py-20 bg-gradient-light dark:bg-gradient-dark"
-
+      className="py-20 bg-background"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -124,16 +121,12 @@ export default function EducationSection() {
                   Certifications
                 </h3>
                 <div className="space-y-3">
-                  {certifications.map((cert) => {
-                    const Icon = cert.icon;
-                    return (
-                      <div key={cert.name} className="flex items-center space-x-2">
-                        <Icon className="h-5 w-5 text-slate-600" />
-                        <span className="flex-1 text-black dark:text-blue-500">{cert.name}</span>
-                        <span className="text-sm text-black dark:text-blue-500">{cert.year}</span>
-                      </div>
-                    );
-                  })}
+                  {certifications.map((cert) => (
+                    <div key={cert.name} className="flex items-center justify-between">
+                      <span className="text-black dark:text-blue-500">{cert.name}</span>
+                      <span className="text-sm text-black dark:text-blue-500">{cert.year}</span>
+                    </div>
+                  ))}
                 </div>
               </CardContent>
             </Card>

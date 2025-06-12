@@ -10,7 +10,7 @@ const projects = [
     id: 1,
     title: "IoT ThingSpeak Sensor Program",
     description:
-      "IoT system using Python and Arduino IDE to collect motion sensor data, send it to ThingSpeak, and generate CSVs for visualization. See screenshot.",
+      "IoT system using Python and Arduino IDE to collect motion sensor data, send it to ThingSpeak, and generate CSVs for visualization.",
     image:
       "/img/iot-thingspeak-system.png",
     technologies: ["Python", "Arduino", "ThingSpeak", "IoT"],
@@ -22,7 +22,7 @@ const projects = [
     id: 2,
     title: "Java Swing Banking Management System",
     description:
-      "Java Swing app for secure banking operations with UML-modeled workflows. Includes screenshot of account dashboard.",
+      "Java Swing app for secure banking and supermarket operations. Used UML diagrams to model users, access, and workflows.",
     image:
       "/img/banking-management-system.png",
     technologies: ["Java", "Swing", "UML"],
@@ -240,8 +240,24 @@ export default function ProjectsSection() {
                 />
               </div>
               <CardContent className="p-6">
-                <div className="mb-3">
+                <div className="flex items-center justify-between mb-3">
                   <h3 className="text-xl font-bold text-black dark:text-blue-500">{project.title}</h3>
+                  <div className="flex space-x-2">
+                    <a
+                      href={project.githubUrl}
+                      className="text-black dark:text-blue-500 transition-colors"
+                    >
+                      <Github className="h-5 w-5" />
+                    </a>
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        className="text-black dark:text-blue-500 transition-colors"
+                      >
+                        <ExternalLink className="h-5 w-5" />
+                      </a>
+                    )}
+                  </div>
                 </div>
 
                 <p className="text-black dark:text-blue-500 mb-4 text-sm leading-relaxed">
@@ -258,16 +274,6 @@ export default function ProjectsSection() {
                       {tech}
                     </Badge>
                   ))}
-                </div>
-                <div className="mt-4 flex space-x-2">
-                  <Button size="sm" asChild>
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">Source</a>
-                  </Button>
-                  {project.liveUrl && (
-                    <Button variant="secondary" size="sm" asChild>
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">Live</a>
-                    </Button>
-                  )}
                 </div>
               </CardContent>
             </Card>
