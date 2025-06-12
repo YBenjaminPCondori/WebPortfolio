@@ -59,7 +59,9 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center h-16 px-4 sm:px-6 lg:px-8">
         <div className="font-bold text-xl text-slate-800 flex-shrink-0">
-          Y. BENJAMIN PEREZ. ENGINEERING PORTFOLIO
+          Y. BENJAMIN 
+          <br></br>
+          PEREZ. C
         </div>
 
         {/* Desktop Navigation */}
