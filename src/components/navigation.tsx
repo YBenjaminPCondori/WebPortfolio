@@ -88,7 +88,7 @@ export default function Navigation() {
                     ? "text-blue-500 font-bold border-blue-500"
                     : scrolled
                     ? "bg-blue-200 text-black hover:bg-black hover:text-white"
-                    : "bg-transparent text-black hover:bg-blue-200 hover:text-black"
+                    : "bg-transparent text-white hover:bg-blue-200 hover:text-black"
                 }`}
               >
                 {link.label}
