@@ -1,8 +1,10 @@
+// Libraries, used - Card, Card Content, Badges for divisions, Buttons for UI purposes, and useEffect for 
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useEffect, useRef, useState } from "react";
 
+//Const ExperienceSection  Variabel for containingnt he job title, and expeirences and skills respectively
 const experiences = [
   {
     id: 1,
@@ -117,6 +119,7 @@ const experiences = [
   },
 ];
 
+// ExperienceSection component to display work history with animations
 export default function ExperienceSection() {
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [visibleItems, setVisibleItems] = useState<number[]>([]);
@@ -149,6 +152,7 @@ export default function ExperienceSection() {
             I have worked in various roles, from engineering internships to customer service positions, each contributing to my professional growth.
           </p>
         </div>
+
 
         <div className="relative">
           {/* Timeline line */}
