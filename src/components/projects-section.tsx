@@ -241,6 +241,7 @@ export default function ProjectsSection() {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <h3 className="mb-4 text-lg font-bold text-black dark:text-blue-500 text-left">Backend Projects</h3>
+
             <div className="space-y-8">
               {filteredProjects.filter(p => p.type === "backend").map(project => {
                 const slug = project.title.toLowerCase().replace(/\s+/g, "-");
@@ -287,6 +288,7 @@ export default function ProjectsSection() {
           </div>
           <div>
             <h3 className="mb-4 text-lg font-bold text-black dark:text-blue-500 text-left">Frontend Projects</h3>
+
             <div className="space-y-8">
               {filteredProjects.filter(p => p.type === "frontend").map(project => (
                 <Card

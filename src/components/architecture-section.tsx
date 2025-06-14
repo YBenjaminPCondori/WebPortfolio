@@ -16,6 +16,7 @@ export default function ArchitectureSection() {
           </div>
         </div>
         <div className="text-left w-full text-sm sm:text-base">
+
           Java · Spring Boot · PostgreSQL · RabbitMQ · Docker · GitHub Actions
         </div>
       </div>
