@@ -87,8 +87,8 @@ export default function Navigation() {
                   link.href.startsWith('#') && activeSection === link.href.substring(1)
                     ? "text-blue-500 font-bold border-blue-500"
                     : scrolled
-                    ? "bg-blue-200 text-black dark:bg-gray-900 dark:text-white hover:bg-black hover:text-white dark:hover:bg-blue-200 dark:hover:text-black"
-                    : "bg-transparent text-black dark:bg-gray-900 dark:text-white hover:bg-blue-200 hover:text-black"
+                    ? "bg-blue-200 text-black hover:bg-black hover:text-white"
+                    : "bg-transparent text-black hover:bg-blue-200 hover:text-black"
                 }`}
               >
                 {link.label}
@@ -114,8 +114,8 @@ export default function Navigation() {
                       link.href.startsWith('#') && activeSection === link.href.substring(1)
                         ? "text-blue-500 font-bold border-blue-500"
                         : scrolled
-                        ? "bg-blue-200 text-black dark:bg-gray-900 dark:text-white hover:bg-black hover:text-white dark:hover:bg-blue-200 dark:hover:text-black"
-                        : "bg-transparent text-black dark:bg-gray-900 dark:text-white hover:bg-blue-200 hover:text-black"
+                        ? "bg-blue-200 text-black hover:bg-black hover:text-white"
+                        : "bg-transparent text-black hover:bg-blue-200 hover:text-black"
                     }`}
                   >
                     {link.label}
