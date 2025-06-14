@@ -28,7 +28,7 @@ export default function HeroSection() {
       className="pt-16 min-h-screen flex items-center justify-center bg-gray-900 text-white font-mono"
     >
       <div className="w-full px-4 sm:px-6 lg:px-8 py-20 transition-opacity">
-        <div className="space-y-6 max-w-3xl mx-auto text-center">
+        <div className="space-y-6 max-w-3xl mx-auto text-left">
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold">
               Computer

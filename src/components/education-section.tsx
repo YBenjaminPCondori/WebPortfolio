@@ -36,7 +36,7 @@ export default function EducationSection() {
       className="py-20 bg-background"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-left mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-blue-500 mb-4">EDUCATION and CERTIFICATIONS</h2>
           <p className="text-xl text-black dark:text-blue-500 max-w-2xl mx-auto">
             My educational background includes studying Bachelor's at University, and Higher Education respectively.
@@ -137,7 +137,7 @@ export default function EducationSection() {
         <div className="mt-12">
           <Card className="bg-sky-100 dark:bg-slate-800 border border-sky-200 dark:border-slate-700">
             <CardContent className="p-8">
-              <h3 className="text-xl font-bold text-black dark:text-blue-500 mb-6 text-center">Achievements & Activities</h3>
+              <h3 className="text-xl font-bold text-black dark:text-blue-500 mb-6 text-left">Achievements & Activities</h3>
               <div className="grid md:grid-cols-3 gap-6">
                 {achievements.map((achievement, index) => {
                   const IconComponent = achievement.icon;

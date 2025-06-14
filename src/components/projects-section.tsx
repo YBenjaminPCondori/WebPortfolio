@@ -210,7 +210,7 @@ export default function ProjectsSection() {
       id="projects"
       className="py-20 bg-gradient-light dark:bg-gradient-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-left mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-blue-500 mb-4">
             PROJECTS and ACADEMIC WORK
           </h2>
@@ -240,7 +240,7 @@ export default function ProjectsSection() {
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 gap-8">
           <div>
-            <h3 className="mb-4 text-lg font-bold text-black dark:text-blue-500 text-center">Backend Projects</h3>
+            <h3 className="mb-4 text-lg font-bold text-black dark:text-blue-500 text-left">Backend Projects</h3>
             <div className="space-y-8">
               {filteredProjects.filter(p => p.type === "backend").map(project => {
                 const slug = project.title.toLowerCase().replace(/\s+/g, "-");
@@ -286,7 +286,7 @@ export default function ProjectsSection() {
             </div>
           </div>
           <div>
-            <h3 className="mb-4 text-lg font-bold text-black dark:text-blue-500 text-center">Frontend Projects</h3>
+            <h3 className="mb-4 text-lg font-bold text-black dark:text-blue-500 text-left">Frontend Projects</h3>
             <div className="space-y-8">
               {filteredProjects.filter(p => p.type === "frontend").map(project => (
                 <Card
