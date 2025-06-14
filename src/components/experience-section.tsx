@@ -29,7 +29,7 @@ const experiences = [
   {
     id: 3,
     title: "Junior Assistant Plumber",
-    relevant: false;
+    relevant: false,
     company: "JP Plumbing and Heating",
     link: "#",
     period: "May 2023 – July 2023",
@@ -40,7 +40,7 @@ const experiences = [
   {
     id: 4,
     title: "Sales Team Member / Stock Room Operative",
-    relevant: false;
+    relevant: false,
     company: "Clarks",
     link: "https://www.clarks.com",
     period: "May 2022 – July 2022",
@@ -51,7 +51,7 @@ const experiences = [
   {
     id: 5,
     title: "Cleaning Operative",
-    relevant: false;
+    relevant: false,
     company: "Nviro Limited",
     link: "https://www.nviro.co.uk",
     period: "Jan 2021 – Apr 2022",
@@ -62,7 +62,7 @@ const experiences = [
   {
     id: 6,
     title: "Junior WordPress Developer (Summer Internship)",
-    relevant: true;
+    relevant: true,
     company: "Complex Creative",
     link: "https://www.wearecomplexcreative.com",
     period: "Jul 2021 – Aug 2021",
@@ -73,7 +73,7 @@ const experiences = [
   {
     id: 7,
     title: "Food Bank Volunteer",
-    relevant: false;
+    relevant: false,
     company: "Masjid Ul Ibrahim",
     link: "https://www.brunel.ac.uk/research/Groups/Heat-Pipe-and-Thermal-Management/home",
     period: "Feb 2021 – Aug 2021",
@@ -84,7 +84,7 @@ const experiences = [
   {
     id: 8,
     title: "IT Teaching Assistant",
-    relevant: true;
+    relevant: true,
     company: "Bonny Downs Community Association / Active Newham",
     link: "https://www.bonnydowns.org",
     period: "Dec 2020 – Jan 2021",
@@ -95,7 +95,7 @@ const experiences = [
    {
     id: 9,
     title: "Digtial Skills Assistant (Work Experience)",
-    relevant: true;
+    relevant: true,
     company: "Samsung Digital Academy / Newham College of Further Education",
     link: "https://www.newham.ac.uk/",
     period: "July 20117 – Aug 2017",
@@ -107,7 +107,7 @@ const experiences = [
    {
     id: 10,
     title: "Personal Trainer Assistant (Work Experience)",
-    relevant: false;
+    relevant: false,
     company: "The Gym / Newhaam College of Further Education",
     link: "https://www.thegymgroup.com/",
     period: "June 2016 – August 2016",
