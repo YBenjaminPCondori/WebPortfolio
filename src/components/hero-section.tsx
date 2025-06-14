@@ -40,22 +40,22 @@ export default function HeroSection() {
               <br />
             </p>
           </div>
-          <div className="bg-black rounded-md p-4 text-green-400 text-sm">
+            <div className="bg-black rounded-md p-4 text-green-400 text-sm">
             <pre>
-curl -X GET https://api.ybenpc.com/status
-→ 200 OK (15ms)
+      curl -X GET https://api.ybenpc.com/status
+      → 200 OK (15ms)
             </pre>
-          </div>
-            <div className="flex flex-wrap justify-center gap-3">
-            <img src="/img/java.png" alt="Java logo on a white background, representing programming language proficiency, neutral tone" className="w-full h-auto object-cover" />
-            <img src="/img/python.png" alt="Java logo on a white background, representing programming language proficiency, neutral tone" className="w-full h-auto object-cover" />
-            <img src="/img/c.png" alt="Technology icon on a plain background, suggesting additional technical skills, neutral tone" className="w-full h-auto object-cover" />
-            <img src="/img/c++.png" alt="Technology icon on a plain background, suggesting additional technical skills, neutral tone" className="w-full h-auto object-cover" />
-            <img src="/img/assembly.png" alt="Technology icon on a plain background, suggesting additional technical skills, neutral tone" className="w-full h-auto object-cover" />
-            <img src="/img/vhdl.png" alt="Technology icon on a plain background, suggesting additional technical skills, neutral tone" className="w-full h-auto object-cover" />
-            <img src="/img/verilog.png" alt="Technology icon on a plain background, suggesting additional technical skills, neutral tone" className="w-full h-auto object-cover" />
-            <img src="/img/html.png" alt="HTML5 logo in orange and white, symbolizing web development skills, neutral tone" className="w-full h-auto object-cover" />  
-            <img src="/img/react.png" alt="React logo with blue atom symbol, representing modern frontend development, neutral tone" className="w-full h-auto object-cover" />
+            </div>
+            <div className="flex flex-wrap justify-center gap-3 mt-4">
+            <img src="/img/java.png" alt="Java logo" className="w-10 h-10 object-contain" />
+            <img src="/img/python.png" alt="Python logo" className="w-10 h-10 object-contain" />
+            <img src="/img/c.png" alt="C logo" className="w-10 h-10 object-contain" />
+            <img src="/img/c++.png" alt="C++ logo" className="w-10 h-10 object-contain" />
+            <img src="/img/assembly.png" alt="Assembly logo" className="w-10 h-10 object-contain" />
+            <img src="/img/vhdl.png" alt="VHDL logo" className="w-10 h-10 object-contain" />
+            <img src="/img/verilog.png" alt="Verilog logo" className="w-10 h-10 object-contain" />
+            <img src="/img/html.png" alt="HTML5 logo" className="w-10 h-10 object-contain" />
+            <img src="/img/react.png" alt="React logo" className="w-10 h-10 object-contain" />
             </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
