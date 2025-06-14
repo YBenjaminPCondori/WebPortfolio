@@ -46,12 +46,17 @@ curl -X GET https://api.ybenpc.com/status
 → 200 OK (15ms)
             </pre>
           </div>
-
-          <div className="flex flex-wrap justify-center gap-3">
-            <Badge variant="primary" className="px-4 py-2 text-sm font-medium">Software Development/Engineering</Badge>
-            <Badge variant="primary" className="px-4 py-2 text-sm font-medium">Embedded/Electronics Systems</Badge>
-            <Badge variant="primary" className="px-4 py-2 text-sm font-medium">Machine Learning/Generative-AI</Badge>
-          </div>
+            <div className="flex flex-wrap justify-center gap-3">
+            <img src="/img/java.png" alt="Java logo on a white background, representing programming language proficiency, neutral tone" className="w-full h-auto object-cover" />
+            <img src="/img/python.png" alt="Java logo on a white background, representing programming language proficiency, neutral tone" className="w-full h-auto object-cover" />
+            <img src="/img/c.png" alt="Technology icon on a plain background, suggesting additional technical skills, neutral tone" className="w-full h-auto object-cover" />
+            <img src="/img/c++.png" alt="Technology icon on a plain background, suggesting additional technical skills, neutral tone" className="w-full h-auto object-cover" />
+            <img src="/img/assembly.png" alt="Technology icon on a plain background, suggesting additional technical skills, neutral tone" className="w-full h-auto object-cover" />
+            <img src="/img/vhdl.png" alt="Technology icon on a plain background, suggesting additional technical skills, neutral tone" className="w-full h-auto object-cover" />
+            <img src="/img/verilog.png" alt="Technology icon on a plain background, suggesting additional technical skills, neutral tone" className="w-full h-auto object-cover" />
+            <img src="/img/html.png" alt="HTML5 logo in orange and white, symbolizing web development skills, neutral tone" className="w-full h-auto object-cover" />  
+            <img src="/img/react.png" alt="React logo with blue atom symbol, representing modern frontend development, neutral tone" className="w-full h-auto object-cover" />
+            </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
