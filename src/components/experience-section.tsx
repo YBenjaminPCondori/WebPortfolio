@@ -16,7 +16,7 @@ const experiences = [
   },
   {
     id: 2,
-    title: "Systems Design Engineer Intern",
+    title: "Systems Design Engineer (Summer Internship)",
     company: "Brunel University London",
     link: "https://www.brunel.ac.uk/research/Groups/Heat-Pipe-and-Thermal-Management/home",
     period: "Feb 2024 – July 2024",
@@ -77,9 +77,30 @@ const experiences = [
   {
     id: 8,
     title: "IT Teaching Assistant",
-    company: "Bonny Downs Community Association",
+    company: "Bonny Downs Community Association / Active Newham",
     link: "https://www.bonnydowns.org",
     period: "Dec 2020 – Jan 2021",
+    description: "Assisted teaching computer literacy to children and adults, providing technical support and guidance.",
+    technologies: ["Teaching", "Technical Support"],
+    current: false,
+  },
+   {
+    id: 9,
+    title: "Digtial Skills Assistant (Work Experience)",
+    company: "Samsung Digital Academy / Newham College of Further Education",
+    link: "https://www.newham.ac.uk/",
+    period: "July 20117 – Aug 2017",
+    description: "Assisted teaching computer literacy to children and adults, providing technical support and guidance.",
+    technologies: ["Teaching", "Technical Support"],
+    current: false,
+  },
+
+   {
+    id: 10,
+    title: "Personal Trainer Assistant (Work Experience)",
+    company: "The Gym / Newhaam College of Further Education",
+    link: "https://www.thegymgroup.com/",
+    period: "June 2016 – August 2016",
     description: "Assisted teaching computer literacy to children and adults, providing technical support and guidance.",
     technologies: ["Teaching", "Technical Support"],
     current: false,
@@ -130,7 +151,12 @@ export default function ExperienceSection() {
                 key={exp.id}
                 data-index={index}
                 ref={(el) => (itemRefs.current[index] = el)}
-                className={`relative flex items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''} ${visibleItems.includes(index) ? 'reveal-show' : 'reveal-hidden'}`}
+                className={`relative flex items-center ${
+                  ['Systems Design Engineer (Summer Internship)', 'Junior WordPress Developer', 'IT Teaching Assistant', 'Digtial Skills Assistant (Work Experience)'].includes(exp.title)
+                  ? 'md:flex-row' // Relevant roles on left
+                    : 'md:flex-row-reverse' // Non-relevant roles on right
+              } ${visibleItems.includes(index) ? 'reveal-show' : 'reveal-hidden'}`}
+
               >
                 <div className={`absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 shadow-lg bg-sky-200 dark:bg-slate-700 ${visibleItems.includes(index) ? 'grow' : 'scale-50'}`}></div>
 
