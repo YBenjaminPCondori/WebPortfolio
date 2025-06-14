@@ -8,6 +8,7 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
+    type: "backend",
     title: "IoT ThingSpeak Sensor Program",
     description:
       "IoT system using Python and Arduino IDE to collect motion sensor data, send it to ThingSpeak, and generate CSVs for visualization.",
@@ -20,6 +21,7 @@ const projects = [
   },
   {
     id: 2,
+    type: "frontend",
     title: "Java Swing Banking Management System",
     description:
       "Java Swing app for secure banking and supermarket operations. Used UML diagrams to model users, access, and workflows.",
@@ -31,8 +33,9 @@ const projects = [
     liveUrl: null,
   },
 
-{
+  {
     id: 3,
+    type: "frontend",
     title: "JAVA Swing Supermarket Management System",
     description:
       "Developed ano Implemented a Java Swing app for secure transactions, and a user management system to monitor, check out, and logs.",
@@ -47,6 +50,7 @@ const projects = [
 
   {
     id: 4,
+    type: "backend",
     title: "PIC16F LED/LCD Project",
     description:
       "Developed and programmed a PIC16F877A with C and Assembly to control LEDs, 7-segment, and LCD display. Used MPLAB XC8 and mLoader.",
@@ -59,6 +63,7 @@ const projects = [
   },
   {
     id: 5,
+    type: "backend",
     title: "Occupancy Monitoring with TinyML",
     description:
       "Python + TensorFlow system using edge AI to detect office occupancy, dynamically adjust conditions, and optimize energy use. Deployed on Raspberry Pi.",
@@ -71,6 +76,7 @@ const projects = [
   },
   {
     id: 6,
+    type: "backend",
     title: "VDHL FPGA Sequence Detector",
     description:
       "Designed, simulated, and debugged a sequence detector state machine on a NEXYS FPGA board using VHDL. Included power analysis and Vivado simulation.",
@@ -83,6 +89,7 @@ const projects = [
   },
   {
     id: 7,
+    type: "backend",
     title: "Raspberry Pi OpenCV Socket Project",
     description:
       "Built a real-time video pipeline using Python, OpenCV, and Raspberry Pi to detect red-dot objects and track motion. Networked with socket programming.",
@@ -96,6 +103,7 @@ const projects = [
 
   {
     id: 8,
+    type: "backend",
     title: "MSP4320 Line Following Robot",
     description:
       "Built a Line-Following Robot using the MSP4320.",
@@ -109,6 +117,7 @@ const projects = [
 
   {
     id: 9,
+    type: "frontend",
     title: "Photography Front End Static Web Portfolio",
     description:
       "Developed, Designed and Implemented a static Front End website for a photographer to showcase her portfolio, and history.",
@@ -122,6 +131,7 @@ const projects = [
 
   {
     id: 10,
+    type: "backend",
     title: "Automated Inventory Camera Recording System",
     description:
       "Designed and implemented a prototype inventory system using a camera and computer vision to automatically detect, classify, and record items. Utilized Python and OpenCV for image capture and processing, and trained a lightweight neural network for real-time object recognition. Reduced manual entry workload and improved accuracy of inventory logging.",
@@ -136,6 +146,7 @@ const projects = [
   
   {
     id: 11,
+    type: "backend",
     title: "Smart Tool Inventory Management System",
     description:
     "Developed an automated inventory management solution for tracking tools (e.g., screws, hand tools) in manufacturing labs. Integrated ESP8266 D1 Mini microcontrollers and LED indicators for real-time tool status and availability. Combined camera-based object recognition (Python, OpenCV) with IoT connectivity for automated recording and monitoring. System provided instant visual feedback and streamlined tool check-in/check-out, reducing losses and improving operational efficiency.",
@@ -147,8 +158,9 @@ const projects = [
     liveUrl: null,
   },
 
-{
+  {
     id: 12,
+    type: "backend",
     title: "ECG Signal Processing and Classification",
     description:
     "Developed a Python-based system for processing and classifying ECG signals using machine learning. Implemented signal filtering, feature extraction, and edge detection to extract time series data from images.",
@@ -162,6 +174,7 @@ const projects = [
 
   {
   id: 13,
+  type: "backend",
   title: "Verilog FSM Pulse Generator",
   description:
     "Designed and implemented a finite state machine (FSM) in Verilog to generate configurable digital pulse streams for two outputs (Z1 and Z2) based on a 2-bit selector input. The FSM produces different output patterns depending on the selected input, matching formal specifications for waveform generation. The design was fully verified in simulation, adheres to functional-level Verilog constraints, and avoids behavioral synthesis or auto-generated code.",
@@ -197,11 +210,11 @@ export default function ProjectsSection() {
       id="projects"
       className="py-20 bg-gradient-light dark:bg-gradient-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-left mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-blue-500 mb-4">
             PROJECTS and ACADEMIC WORK
           </h2>
-          <p className="text-xl text-black dark:text-blue-500 max-w-2xl mx-auto">
+          <p className="text-xl text-black dark:text-blue-500 max-w-2xl">
             Projects in embedded systems, machine learning, edge AI, microcontrollers, and full-stack software.
           </p>
         </div>
@@ -225,59 +238,92 @@ export default function ProjectsSection() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project) => (
-            <Card
-              key={project.id}
-              onClick={() => setSelectedProject(project)}
-              className="bg-sky-100 dark:bg-slate-800 border border-sky-200 dark:border-slate-700 overflow-hidden hover:shadow-xl transition-all duration-300 project-card cursor-pointer"
-            >
-              <div className="relative">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover"
-                />
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-bold text-black dark:text-blue-500">{project.title}</h3>
-                  <div className="flex space-x-2">
-                    <a
-                      href={project.githubUrl}
-                      className="text-black dark:text-blue-500 transition-colors"
+        <div className="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="mb-4 text-lg font-bold text-black dark:text-blue-500 text-left">Backend Projects</h3>
+            <div className="space-y-8">
+              {filteredProjects.filter(p => p.type === "backend").map(project => {
+                const slug = project.title.toLowerCase().replace(/\s+/g, "-");
+                return (
+                  <div key={project.id}>
+                    <p className="font-mono text-xs bg-gray-800 text-green-400 p-2 rounded mb-2">
+                      GET /api/{slug}/status → 200 OK
+                    </p>
+                    <Card
+                      onClick={() => setSelectedProject(project)}
+                      className="bg-sky-100 dark:bg-slate-800 border border-sky-200 dark:border-slate-700 overflow-hidden hover:shadow-xl transition-all duration-300 project-card cursor-pointer"
                     >
-                      <Github className="h-5 w-5" />
-                    </a>
-                    {project.liveUrl && (
-                      <a
-                        href={project.liveUrl}
-                        className="text-black dark:text-blue-500 transition-colors"
-                      >
-                        <ExternalLink className="h-5 w-5" />
-                      </a>
-                    )}
+                      <div className="relative">
+                        <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+                      </div>
+                      <CardContent className="p-6">
+                        <div className="flex items-center justify-between mb-3">
+                          <h3 className="text-xl font-bold text-black dark:text-blue-500">{project.title}</h3>
+                          <div className="flex space-x-2">
+                            <a href={project.githubUrl} className="text-black dark:text-blue-500 transition-colors">
+                              <Github className="h-5 w-5" />
+                            </a>
+                            {project.liveUrl && (
+                              <a href={project.liveUrl} className="text-black dark:text-blue-500 transition-colors">
+                                <ExternalLink className="h-5 w-5" />
+                              </a>
+                            )}
+                          </div>
+                        </div>
+                        <p className="text-black dark:text-blue-500 mb-4 text-sm leading-relaxed">{project.description}</p>
+                        <div className="flex flex-wrap gap-2">
+                          {project.technologies.map((tech) => (
+                            <Badge key={tech} variant="primary" className="text-xs bg-teal-200 text-teal-800 border-transparent">
+                              {tech}
+                            </Badge>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </Card>
                   </div>
-                </div>
-
-                <p className="text-black dark:text-blue-500 mb-4 text-sm leading-relaxed">
-                  {project.description}
-                </p>
-
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech) => (
-                    <Badge
-                      key={tech}
-                      variant="primary"
-                      className="text-xs bg-teal-200 text-teal-800 border-transparent"
-                    >
-                      {tech}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                );
+              })}
+            </div>
+          </div>
+          <div>
+            <h3 className="mb-4 text-lg font-bold text-black dark:text-blue-500 text-left">Frontend Projects</h3>
+            <div className="space-y-8">
+              {filteredProjects.filter(p => p.type === "frontend").map(project => (
+                <Card
+                  key={project.id}
+                  onClick={() => setSelectedProject(project)}
+                  className="bg-sky-100 dark:bg-slate-800 border border-sky-200 dark:border-slate-700 overflow-hidden hover:shadow-xl transition-all duration-300 project-card cursor-pointer"
+                >
+                  <div className="relative">
+                    <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+                  </div>
+                  <CardContent className="p-6">
+                    <div className="flex items-center justify-between mb-3">
+                      <h3 className="text-xl font-bold text-black dark:text-blue-500">{project.title}</h3>
+                      <div className="flex space-x-2">
+                        <a href={project.githubUrl} className="text-black dark:text-blue-500 transition-colors">
+                          <Github className="h-5 w-5" />
+                        </a>
+                        {project.liveUrl && (
+                          <a href={project.liveUrl} className="text-black dark:text-blue-500 transition-colors">
+                            <ExternalLink className="h-5 w-5" />
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                    <p className="text-black dark:text-blue-500 mb-4 text-sm leading-relaxed">{project.description}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech) => (
+                        <Badge key={tech} variant="primary" className="text-xs bg-teal-200 text-teal-800 border-transparent">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
         </div>
       <Dialog open={!!selectedProject} onOpenChange={(o) => !o && setSelectedProject(null)}>
   <DialogContent className="text-black dark:text-blue-500">
