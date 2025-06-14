@@ -313,7 +313,7 @@ export default function ProjectsSection() {
                         )}
                       </div>
                     </div>
-                    <p className="text-black dark:text-blue-500 mb-4 text-sm leading-relaxed">{project.description}</p>
+                    <p className="text-black dark:text-white-500 mb-4 text-sm leading-relaxed">{project.description}</p>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech) => (
                         <Badge key={tech} variant="primary" className="text-xs bg-teal-200 text-teal-800 border-transparent">
@@ -328,10 +328,10 @@ export default function ProjectsSection() {
           </div>
         </div>
       <Dialog open={!!selectedProject} onOpenChange={(o) => !o && setSelectedProject(null)}>
-  <DialogContent className="text-black dark:text-blue-500">
+  <DialogContent className="text-yellow text-blue-500">
     {selectedProject && (
       <>
-        <DialogTitle className="text-black dark:text-blue-500">{selectedProject.title}</DialogTitle>
+        <DialogTitle className="text-yellow text-blue-500">{selectedProject.title}</DialogTitle>
         <p className="mb-4">{selectedProject.description}</p>
         <DialogFooter className="flex space-x-2">
           <Button asChild>
