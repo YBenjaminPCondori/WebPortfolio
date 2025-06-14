@@ -162,15 +162,15 @@ export default function ExperienceSection() {
                 data-index={index}
                 ref={(el) => (itemRefs.current[index] = el)}
                 className={`relative flex items-center ${
-                  ['Systems Design Engineer (Summer Internship)', 'Junior WordPress Developer', 'IT Teaching Assistant', 'Digtial Skills Assistant (Work Experience)'].includes(exp.title)
-                  ? 'md:flex-row' // Relevant roles on left
-                    : 'md:flex-row-reverse' // Non-relevant roles on right
-              } ${visibleItems.includes(index) ? 'reveal-show' : 'reveal-hidden'}`}
+                exp.relevant ? 'md:flex-row' : 'md:flex-row-reverse'
+                  } ${visibleItems.includes(index) ? 'reveal-show' : 'reveal-hidden'}`}
+
 
               >
                 <div className={`absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 shadow-lg bg-sky-200 dark:bg-slate-700 ${visibleItems.includes(index) ? 'grow' : 'scale-50'}`}></div>
 
-                <div className={`ml-16 md:ml-0 md:w-1/2 ${index % 2 === 1 ? 'md:pl-12' : 'md:pr-12'}`}>
+                <div className={`ml-16 md:ml-0 md:w-1/2 ${exp.relevant ? 'md:pr-12' : 'md:pl-12'}
+`}>
                   <Card className="bg-sky-100 dark:bg-slate-800 hover:shadow-xl border border-sky-200 dark:border-slate-700 transition-shadow">
                     <CardContent className="p-6">
                       <div className="flex items-start justify-between mb-4">
