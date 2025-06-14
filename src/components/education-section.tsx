@@ -64,7 +64,7 @@ export default function EducationSection() {
                     <h4 className="font-semibold mb-2">Relevant Coursework:</h4>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                       {coursework.map((course) => (
-                        <span key={course} className="text-sm text-black dark:text-blue-500">• {course}</span>
+                        <span key={course} className="text-sm text-white">• {course}</span>
                       ))}
                     </div>
                   </div>
