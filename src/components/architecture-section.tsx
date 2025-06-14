@@ -15,7 +15,8 @@ export default function ArchitectureSection() {
             <span>[PostgreSQL]</span>
           </div>
         </div>
-        <div className="text-center text-sm sm:text-base">
+        <div className="text-left w-full text-sm sm:text-base">
+
           Java · Spring Boot · PostgreSQL · RabbitMQ · Docker · GitHub Actions
         </div>
       </div>
