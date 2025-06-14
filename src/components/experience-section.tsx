@@ -149,7 +149,7 @@ export default function ExperienceSection() {
                         </Badge>
                       </div>
 
-                      <p className="text-black dark:text-white-500 mb-4">{exp.description}</p>
+                      <p className="text-black text-white mb-4">{exp.description}</p>
 
                       <div className="flex flex-wrap gap-2 mb-4">
                         {exp.technologies.map((tech) => (

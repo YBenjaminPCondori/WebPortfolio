@@ -31,7 +31,7 @@ export default function HeroSection() {
         <div className="space-y-6 max-w-3xl mx-auto text-left">
 
           <div className="space-y-4">
-            <h1 className="text-4xl md:text-6xl d ark:text-blue-500 mb-4font-bold">
+            <h1 className="text-4xl md:text-6xl dark:text-blue-500 mb-4 font-bold">
               Computer
               <span className="block">Engineering</span>
             </h1>
