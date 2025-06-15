@@ -38,8 +38,7 @@ export default function HeroSection() {
             <p className="text-xl">
               Hi, I'm Y. Benjamin Perez C., a Computer Systems Engineering Graduate at Brunel University of London.
               <br />
-              <br><h2 className="text-sm text-gray-400 italic mt-1">Site is still currently (WORK IN PROGRESS).</h2>
-</br>
+              <h2 className="text-sm text-gray-400 italic mt-1">Site is still currently (WORK IN PROGRESS).</h2>
             </p>
           </div>
             <div className="bg-black rounded-md p-4 text-green-400 text-sm">
