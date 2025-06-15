@@ -15,21 +15,27 @@ const coursework = [
 ];
 
 const skills = {
+  languages: [
+    "Java",
+    "Python",
+    "C",
+    "C++",
+    "Assembly",
+    "VHDL",
+    "Verilog",
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "React",
+  ],
+  frameworks: [
+    "React",
+    "Node.js",
+    "Express",
+    "TensorFlow",
+    "OpenCV",
+  ],
 };
-
-  <div className="flex flex-wrap justify-center gap-3 mt-4">
-            <img src="/img/java.png" alt="Java logo" className="w-10 h-10 object-contain" />
-            <img src="/img/python.png" alt="Python logo" className="w-10 h-10 object-contain" />
-            <img src="/img/c.png" alt="C logo" className="w-10 h-10 object-contain" />
-            <img src="/img/c++.png" alt="C++ logo" className="w-10 h-10 object-contain" />
-            <img src="/img/assembly.png" alt="Assembly logo" className="w-10 h-10 object-contain" />
-            <img src="/img/vhdl.png" alt="VHDL logo" className="w-10 h-10 object-contain" />
-            <img src="/img/verilog.png" alt="Verilog logo" className="w-10 h-10 object-contain" />
-            <img src="/img/html.png" alt="HTML5 logo" className="w-10 h-10 object-contain" />
-            <img src="/img/css.png" alt="CSS3 logo" className="w-10 h-10 object-contain" />
-            <img src="/img/javascript.png" alt="JavaScript logo" className="w-10 h-10 object-contain" />  
-            <img src="/img/react.png" alt="React logo" className="w-10 h-10 object-contain" />
-            </div>
 
 const certifications = [
   { name: "LearntoCode - Front End Development", year: "2021" },
