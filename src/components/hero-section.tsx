@@ -47,7 +47,6 @@ export default function HeroSection() {
             </pre>
             </div>
             <br></br>
-            <br></br>
             <div className="flex flex-wrap justify-center gap-3 mt-4">
             <img src="/img/java.png" alt="Java logo" className="w-10 h-10 object-contain" />
             <img src="/img/python.png" alt="Python logo" className="w-10 h-10 object-contain" />
@@ -62,6 +61,7 @@ export default function HeroSection() {
             <img src="/img/react.png" alt="React logo" className="w-10 h-10 object-contain" />
             </div>
 
+            <br></br>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
             variant="default"
