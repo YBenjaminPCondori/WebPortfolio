@@ -147,7 +147,7 @@ export default function ExperienceSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-left mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-blue-500">WORK HISTORY</h2>
-          <p className="text-xl text-black dark:text-blue-500 max-w-2xl">
+          <p className="text-xl text-white max-w-2xl">
             List of my work experiences, showcasing my skills in engineering, design, and customer service.
             I have worked in various roles, from engineering internships to customer service positions, each contributing to my professional growth.
           </p>

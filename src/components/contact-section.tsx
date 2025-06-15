@@ -48,7 +48,7 @@ export default function ContactSection() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-left mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-blue-500 mb-4">LET'S CONNECT</h2>
-          <p className="text-xl text-black dark:text-blue-500">
+          <p className="text-xl text-white">
             Let's connect! Whether you have a question, want to collaborate, or just say hi, feel free to reach out through any of the methods below.
           </p>
         </div>
@@ -63,7 +63,7 @@ export default function ContactSection() {
                     <IconComponent className="h-6 w-6 text-[lightblue]" />
                   </div>
               <h3 className="font-bold text-black dark:text-blue-500 mb-2">{method.title}</h3>
-                  <p className="text-black dark:text-blue-500 mb-4">{method.value}</p>
+                  <p className="text-white mb-4">{method.value}</p>
                   <Badge variant="primary" className="cursor-pointer inline-block">
                     <a
                       href={method.link}

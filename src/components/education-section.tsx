@@ -58,7 +58,7 @@ export default function EducationSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-left mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-blue-500 mb-4">EDUCATION and CERTIFICATIONS</h2>
-          <p className="text-xl text-black dark:text-blue-500 max-w-2xl">
+          <p className="text-xl text-white max-w-2xl">
             My educational background includes studying Bachelor's at University, and Higher Education respectively.
 
             <br />
@@ -75,9 +75,9 @@ export default function EducationSection() {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-bold mb-2">Bachelor of Engineering</h3>
-                <p className="text-black dark:text-blue-500 font-semibold text-lg mb-1 -ml-2 md:-ml-3 text-left">Computer Systems Engineering</p>
+                <p className="text-white font-semibold text-lg mb-1 -ml-2 md:-ml-3 text-left">   Computer Systems Engineering</p>
                 <p className="text-white mb-3">Brunel University of London</p>
-                <p className="text-sm text-black dark:text-blue-500 mb-4">Expected Graduation: July 2025</p>
+                <p className="text-sm text-white mb-4">Expected Graduation: July 2025</p>
                 
                 <div className="space-y-3">
                   <div>
