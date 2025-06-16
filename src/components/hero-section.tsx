@@ -59,7 +59,7 @@ export default function HeroSection() {
             <img src="/img/html.png" alt="HTML5 logo" className="w-10 h-10 object-contain" />
             <img src="/img/css.png" alt="CSS3 logo" className="w-10 h-10 object-contain" />
             <img src="/img/javascript.png" alt="JavaScript logo" className="w-10 h-10 object-contain" />  
-            <img src="/img/react.png" alt="React logo" className="w-10 h-10 object-contain" />
+            <img src="/img/React.png" alt="React logo" className="w-10 h-10 object-contain" />
             </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
