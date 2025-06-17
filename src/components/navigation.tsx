@@ -13,6 +13,7 @@ const navLinks = [
   { href: "#education", label: "EDUCATION" },
   { href: "#contact", label: "CONTACT" },
   { href: "/docs", label: "API Docs" },
+  { href: "/bank", label: "Bank" },
 ];
 
 export default function Navigation() {

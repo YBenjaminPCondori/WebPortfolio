@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/home";
 import NotFound from "@/pages/not-found";
 import Docs from "@/pages/docs";
+import BankDashboardSkeleton from "@/pages/Banking-Management-System";
 
 export default function App() {
   return (
@@ -17,7 +18,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/docs" element={<Docs />} />
             <Route path="*" element={<NotFound />} />
-            <Route path="/bank" element={<Banking-Management-System />} />
+            <Route path="/bank" element={<BankDashboardSkeleton />} />
           </Routes>
         </TooltipProvider>
       </QueryClientProvider>
