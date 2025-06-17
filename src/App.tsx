@@ -17,6 +17,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/docs" element={<Docs />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/bank" element={<Banking-Management-System />} />
           </Routes>
         </TooltipProvider>
       </QueryClientProvider>
