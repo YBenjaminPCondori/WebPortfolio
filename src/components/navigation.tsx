@@ -11,8 +11,7 @@ const navLinks = [
   { href: "#experience", label: "WORK HISTORY" },
   { href: "#projects", label: "PROJECTS" },
   { href: "#education", label: "EDUCATION" },
-  { href: "#contact", label: "CONTACT" },
-  { href: "/docs", label: "API Docs" },
+  { href: "#contact", label: "GET IN TOUCH" },
 ];
 
 export default function Navigation() {
